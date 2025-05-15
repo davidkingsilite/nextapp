@@ -22,20 +22,20 @@ const Hero = () => {
                        <h1 className='font-bevietnam font-bold text-3xl'>Specialized, efficient,<br/>
                          and thorough cleaning <br/> services
                        </h1>
-                        <span>We provide Performing cleaning tasks using the least amount <br/> of time, energy, and money.</span>
+                        <span>We provide Performing cleaning tasks using the least amount of time, energy, and money.</span>
                      </div>
                   </div>
-                    <div className='flex gap-4 font-bevietnam font-semibold text-sx justify-start items-center'>
+                    <div className='flex gap-5 font-bevietnam font-semibold text-sx justify-start items-center'>
                       <CustomButton
                          title='Get Now'
                          btnType='button'
-                         containerStyles= "text-primary-white rounded-full bg-primary-green-100 min-w-[130px]"
+                         containerStyles= "text-primary-white rounded-[4.5px] bg-primary-green-100 min-w-[130px] "
                          handleClick={()=>router.push('/dashboard/login')}
                         />
                        <CustomButton
                          title='View all Services'
                          btnType='button'
-                         containerStyles='text-black-100 outline outline-1 outline-black outline-offset-2 hover:outline-3'
+                         containerStyles='text-black-100 rounded-[4.5px] outline outline-1 hover:outline-2 outline-[#666666] '
                          handleClick={()=>router.push('/dashboard/login')}
                         />
                     </div>
