@@ -1,15 +1,15 @@
 import Divider from "@/components/Divider";
 import Hero from "@/components/Hero"
-import Services from "@/components/Services";
+import ServicesList from "@/components/ServicesList";
 
 
 export default function Home() {
   
   return (
 
-      <main className="relative ">
+      <main className="relative max-w-fit ">
         <Hero />
-       <div className="max-w-[1440px] mx-auto pl-[100px] pr-[100px] pt-20 pb-10">
+       <div className="max-w-fit mx-auto pl-[100px] pr-[100px] pt-20 pb-10">
          <div className="flex justify-between font-bevietnam gap-20 pb-5">
           <h1 className="text-[25px] font-bold">We Always Provide The Best Services</h1>
           <div className="flex flex-col">
@@ -18,7 +18,7 @@ export default function Home() {
           </div>
          </div>
          <Divider />
-         <Services />
+         <ServicesList />
        </div>
        
       </main>     

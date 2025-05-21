@@ -17,12 +17,12 @@ const CustomButton = ({title,btnType, containerStyles, handleClick, rightIcon,te
         {title}
      </span>
      {rightIcon && (
-         <div className=" relative w-6 h-6">
+         <div className="relative w-4 h-4">
            <Image 
                src={rightIcon}
                alt="right icon"
                fill
-               className="object-contain"
+               className="object-contain  hover:bg-primary-white"
                />
         </div>
      )}

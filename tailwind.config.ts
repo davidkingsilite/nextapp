@@ -13,6 +13,7 @@ module.exports = {
           inter: ["Inter", "sans-serif"],
           poppins: ['var(--font-poppins)', "sans-serif"],
           bevietnam: ['var(--font-be-vietnam)',"sans-serif"],
+          bevietnampro: ['var(--font-be-vietnam)'],
         },
         colors: {
             "black-100": "#111D15",
@@ -27,6 +28,7 @@ module.exports = {
             100: "rgba(59,60,152,0.02)",
           },
           grey: "#4D4D4D",
+          "grey-100": "#666666",
         },
         backgroundImage: {
           'pattern': "url('/pattern.png')",

@@ -9,7 +9,7 @@ const Hero = () => {
 
   const router = useRouter()
   return (
-    <div className='relative'>
+    <div className='relative max-w-fit'>
         <div className="hero__image-container">
             <div className="hero__image">
                 <Image src="/hero_lamge.png" alt="hero" width={1280} height={590} priority className="object-contain"/>
@@ -29,7 +29,7 @@ const Hero = () => {
                       <CustomButton
                          title='Get Now'
                          btnType='button'
-                         containerStyles= "text-primary-white rounded-[4.5px] bg-primary-green-100 min-w-[130px] "
+                         containerStyles= "text-primary-white rounded-[4.5px] bg-primary-green-100 min-w-[130px]"
                          handleClick={()=>router.push('/dashboard/login')}
                         />
                        <CustomButton

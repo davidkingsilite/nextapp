@@ -1,4 +1,5 @@
 // components/Divider.tsx
+
 import React from 'react';
 
 export default function Divider() {
