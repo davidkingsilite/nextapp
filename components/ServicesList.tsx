@@ -1,5 +1,6 @@
 import React from 'react'
 import Services from './Services'
+import CustomButton from './CustomBotton'
 
 const ServicesList = () => {
 
@@ -65,11 +66,17 @@ const ServicesList = () => {
       ]
 
   return (
-    <div className='grid grid-cols-3 w-full gap-5 pt-14 justify-center items-center max-w-fit'>
+    <div className='grid grid-cols-3 w-full gap-5 justify-center items-center max-w-fit relative pb-14'>
         {itemData.map((item)=>(
                 <Services item={item} key={item.id} />
       
                  ))}
+         {/* <CustomButton
+        title=''
+        btnType='button'
+        containerStyles='absolute left-[65rem] top-[160px] rounded-full bg-primary-green-100 py-2 px-4 '
+        rightIcon='/Icon.png'
+      />         */}
     </div>
   )
 }

@@ -2,7 +2,6 @@
 
 import { CustomButtonProps } from "@/type"
 import Image from "next/image"
-import Link from "next/link"
 
 const CustomButton = ({title,btnType, containerStyles, handleClick, rightIcon,textStyles,url,isDisabled}: CustomButtonProps) => {
   return (
@@ -17,12 +16,12 @@ const CustomButton = ({title,btnType, containerStyles, handleClick, rightIcon,te
         {title}
      </span>
      {rightIcon && (
-         <div className="relative w-4 h-4">
+         <div className="relative w-4 h-4 ">
            <Image 
                src={rightIcon}
                alt="right icon"
                fill
-               className="object-contain  hover:bg-primary-white"
+               className="object-contain ml-3"
                />
         </div>
      )}

@@ -13,7 +13,9 @@ module.exports = {
           inter: ["Inter", "sans-serif"],
           poppins: ['var(--font-poppins)', "sans-serif"],
           bevietnam: ['var(--font-be-vietnam)',"sans-serif"],
+          lato: ['var(--font-lato)',"sans-serif"],
           bevietnampro: ['var(--font-be-vietnam)'],
+          outfit: ['var(--font-outfit)', "sans-serif"],
         },
         colors: {
             "black-100": "#111D15",

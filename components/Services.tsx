@@ -17,7 +17,7 @@ interface ServicesProps {
 
 const Services =({item}: ServicesProps) => {
   return (
-    <div className='flex flex-col flex-1 gap-3 max-w-[350px]'>
+    <div className='flex flex-col flex-1 gap-5 max-w-[350px]'>
        <Image
        src={item.img}
        alt='Service Image'
@@ -34,10 +34,11 @@ const Services =({item}: ServicesProps) => {
           title='Book Now'
           btnType='button'
           containerStyles= "hover:text-primary-white rounded-[4.5px] text-black-100 hover:bg-primary-green-100 min-w-[130px] outline outline-1"
-          rightIcon="/Arrow (1).png"
+          rightIcon="/Arrow.svg"
           />
           </div>
       </div>
+      
     </div>
   )
 }
