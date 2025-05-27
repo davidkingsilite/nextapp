@@ -6,8 +6,6 @@ interface ServicesProps {
   item:{
     id: number;
     img: string;
-    img2: string;
-    img3: string;
     alt: string;
     title: string;
     description: string;

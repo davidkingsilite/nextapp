@@ -1,3 +1,4 @@
+import Company from "@/components/Company";
 import Divider from "@/components/Divider";
 import ExpertTeam from "@/components/ExpertTeam";
 import Hero from "@/components/Hero"
@@ -23,6 +24,7 @@ export default function Home() {
          <ServicesList />
          <Solution />
          <ExpertTeam />
+         <Company />
        </div>
        
       </main>     

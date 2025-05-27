@@ -8,8 +8,6 @@ const ServicesList = () => {
         { 
           id: 0,
           img: "/Image.png",
-          img2: "/Vector (1).svg", 
-          img3: "/login.svg", 
           alt: "clay sculpture",
           title: "Office Cleaning",
           description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"
@@ -18,8 +16,6 @@ const ServicesList = () => {
           {
           id: 1,  
           img: "/Image (1).png",
-          img2: "/Vector (1).svg", 
-          img3: "/login.svg", 
           alt: "clay sculpture",
           title: "Spring Cleaning",
           description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"
@@ -29,8 +25,6 @@ const ServicesList = () => {
           {
           id: 2,  
           img: "/Image (2).png",
-          img2: "/Vector (1).svg", 
-          img3: "/login.svg", 
           alt: "clay sculpture",
           title: "House Cleaning",
           description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"
