@@ -2,8 +2,10 @@ import Company from "@/components/Company";
 import Divider from "@/components/Divider";
 import ExpertTeam from "@/components/ExpertTeam";
 import Hero from "@/components/Hero"
+import Pricing from "@/components/Pricing";
 import ServicesList from "@/components/ServicesList";
 import Solution from "@/components/Solution";
+import Testimonial from "@/components/Testimonials";
 
 
 export default function Home() {
@@ -25,6 +27,8 @@ export default function Home() {
          <Solution />
          <ExpertTeam />
          <Company />
+         <Pricing />
+         <Testimonial />
        </div>
        
       </main>     

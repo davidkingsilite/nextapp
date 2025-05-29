@@ -33,7 +33,7 @@ module.exports = {
           "grey-100": "#666666",
         },
         backgroundImage: {
-          'pattern': "url('/pattern.png')",
+          'pattern': "url('/cleaning-bg.png')",
           'hero-bg': "url('/hero.png')",
           'hero': "url('/hero_lamge.png')"
         }
