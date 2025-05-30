@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight, Quote } from 'lucide-react';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -10,7 +11,7 @@ const testimonials = [
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/robert.jpg', // Replace with actual image URL or static import
+    image: '/clientPic1.png', // Replace with actual image URL or static import
   },
   {
     name: 'David Fox',
@@ -18,7 +19,7 @@ const testimonials = [
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/robert.jpg', // Replace with actual image URL or static import
+    image: '/clientPic1.png', // Replace with actual image URL or static import
   },
   {
     name: 'Anita Lisa',
@@ -26,7 +27,7 @@ const testimonials = [
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/robert.jpg', // Replace with actual image URL or static import
+    image: '/clientPic1.png', // Replace with actual image URL or static import
   },
   {
     name: 'Robert John',
@@ -34,7 +35,7 @@ const testimonials = [
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/robert.jpg', // Replace with actual image URL or static import
+    image: '/clientPic1.png', // Replace with actual image URL or static import
   },
   
 ];
@@ -83,11 +84,18 @@ export default function Testimonials() {
 
         {/* Right: Testimonial Card */}
         <div className="relative">
-          <div className="rounded-2xl border-2 border-green-500 p-6 flex items-start gap-6 bg-white shadow-md">
-            <img
+          <div className="rounded-2xl border-2 border-green-500 p-6 flex items-start gap-6 bg-white shadow-md overflow-hidden">
+            {/* <img
               src={image}
               alt={name}
               className="w-28 h-28 rounded-xl object-cover"
+            /> */}
+            <Image
+               src={image}
+               alt={name}
+               width={130}
+               height={200}
+               className='w-28 h-44 rounded-xl object-cover'
             />
 
             <div className="flex-1">

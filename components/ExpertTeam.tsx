@@ -1,6 +1,5 @@
 import React from 'react'
 import Divider from './Divider'
-import Image from 'next/image'
 import Experts from './Experts'
 
 const ExpertTeam = () => {
@@ -10,11 +9,11 @@ const ExpertTeam = () => {
         { 
           id: 0,
           img: "/Image (4).png",
-          img2: "/Frame.png", 
-          img3: "/Dribble.png", 
-          img4: "/Behance.png", 
-          img5: "/Instagram.png", 
-          img6: "/Linkedin.png", 
+          rating: 5, 
+          img3: "/facebook.svg", 
+          img4: "/x.svg", 
+          img5: "/instagram.svg", 
+          img6: "/discord.svg", 
           alt: "clay sculpture",
           title: "Office Cleaning",
           description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"
@@ -23,11 +22,11 @@ const ExpertTeam = () => {
         { 
           id: 1,
           img: "/Image (5).png",
-          img2: "/Frame.png", 
-          img3: "/Dribble.png", 
-          img4: "/Behance.png", 
-          img5: "/Instagram.png", 
-          img6: "/Linkedin.png", 
+          rating: 5, 
+          img3: "/facebook.svg", 
+          img4: "/x.svg", 
+          img5: "/instagram.svg", 
+          img6: "/discord.svg", 
           alt: "clay sculpture",
           title: "Office Cleaning",
           description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"
@@ -36,11 +35,11 @@ const ExpertTeam = () => {
         { 
           id: 2,
           img: "/Image (6).png",
-          img2: "/Frame.png", 
-          img3: "/Dribble.png", 
-          img4: "/Behance.png", 
-          img5: "/Instagram.png", 
-          img6: "/Linkedin.png", 
+          rating: 5, 
+          img3: "/facebook.svg", 
+          img4: "/x.svg", 
+          img5: "/instagram.svg", 
+          img6: "/discord.svg", 
           alt: "clay sculpture",
           title: "Office Cleaning",
           description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"

@@ -1,4 +1,5 @@
-import Company from "@/components/Company";
+import Company from "@/components/AboutCompany";
+import BlogSection from "@/components/BlogSection";
 import Divider from "@/components/Divider";
 import ExpertTeam from "@/components/ExpertTeam";
 import Hero from "@/components/Hero"
@@ -29,6 +30,7 @@ export default function Home() {
          <Company />
          <Pricing />
          <Testimonial />
+         <BlogSection />
        </div>
        
       </main>     
