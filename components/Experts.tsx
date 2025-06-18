@@ -1,4 +1,3 @@
-import { Facebook, Twitter, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
@@ -19,7 +18,7 @@ interface ExpertCardProps {
 
 const Experts = ({item}: ExpertCardProps) => {
   return (
-    <div className='flex flex-col h-[407px] lg:max-w-[277px] flex-1 gap-5 border-[0.75px] border-[#83A790] rounded-2xl'>
+    <div className='flex flex-col h-[407px] lg:max-w-[277px] flex-1 gap-5 border-[0.75px] border-[#83A790] rounded-2xl font-bevietnam'>
       <div className=''>
         <Image
           src={item.img}
@@ -45,8 +44,8 @@ const Experts = ({item}: ExpertCardProps) => {
          <Image
            src={item.img3}
            alt='facebook'
-           width={20}
-           height={20}
+           width={15}
+           height={15}
            className='hover:bg-primary-green-100'
            />
            </Link>
@@ -54,8 +53,8 @@ const Experts = ({item}: ExpertCardProps) => {
           <Image
            src={item.img4}
            alt='X'
-           width={20}
-           height={20}
+           width={15}
+           height={15}
            className='hover:bg-primary-green-100'
            />
           </Link>
@@ -64,8 +63,8 @@ const Experts = ({item}: ExpertCardProps) => {
           <Image
            src={item.img5}
            alt='instargam'
-           width={20}
-           height={20}
+           width={15}
+           height={15}
            className='hover:bg-primary-green-100'
            />
            </Link>
@@ -74,8 +73,8 @@ const Experts = ({item}: ExpertCardProps) => {
           <Image
            src={item.img6}
            alt='discord'
-           width={20}
-           height={20}
+           width={15}
+           height={15}
            className='hover:bg-primary-green-100'
            />
            </Link>

@@ -14,7 +14,7 @@ module.exports = {
           poppins: ['var(--font-poppins)', "sans-serif"],
           bevietnam: ['var(--font-be-vietnam)',"sans-serif"],
           lato: ['var(--font-lato)',"sans-serif"],
-          bevietnampro: ['var(--font-be-vietnam)'],
+          bevietnampro: ['var(--font-be-vietnam)', "sans-serif"],
           outfit: ['var(--font-outfit)', "sans-serif"],
         },
         colors: {
@@ -39,6 +39,9 @@ module.exports = {
         }
       },
     },
-    plugins: [],
+    plugins: [
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/aspect-ratio'),
+  ],
   };
   
