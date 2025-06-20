@@ -84,14 +84,11 @@ const plans = {
 export default function Pricing() {
     
   const [planType, setPlanType] = useState<'monthly' | 'yearly'>('monthly');
+  const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
+
 
   return (
     <section className="relative z-0">
-      
-       {/* Background image
-       <div className="absolute inset-0 z-0 mx-0">
-        <div className="h-3/4 w-full bg-opacity-90 bg-blend-overlay bg-pattern bg-cover bg-center" />
-      </div> */}
         
     <div className='relative z-10 py-12 px-4 text-center font-bevietnam'>
       <h3 className="text-sm font-semibold uppercase">Our Pricing</h3>
@@ -124,12 +121,17 @@ export default function Pricing() {
       </div>
 
       {/* Plans */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-8 relative">
         {plans[planType].map((plan) => (
           <div
             key={plan.title}
-            className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center justify-between border"
+            className={`rounded-xl shadow-lg p-6 flex flex-col items-center justify-between ${plan.title === 'ENTERPRISE PACKAGE' ? 'border bg-green-50 outline outline-1 outline-green-500' : 'border bg-white'} `}
           >
+            {plan.title === 'ENTERPRISE PACKAGE' && (
+             <span className="text-xs uppercase text-white bg-green-500 px-2 py-1 rounded-full absolute top-0">
+               Most Popular
+             </span>
+              )}
             <h3 className="text-lg font-semibold text-gray-800">{plan.title}</h3>
             <div className="my-4">
               <span className="text-3xl font-bold text-green-600">{plan.price}</span>
@@ -142,12 +144,48 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <button className="mt-auto bg-primary-white border border-gray-300 hover:border-green-500 text-sm text-gray-800 font-medium py-2 px-5 rounded-lg hover:bg-green-50 transition min-w-[230px]">
+            <button 
+              onClick={() => setSelectedPlan(plan.title)}
+              className="mt-auto bg-primary-white border border-gray-300 hover:border-green-500 text-sm text-gray-800 font-medium py-2 px-5 rounded-lg hover:bg-green-50 transition min-w-[230px]">
               Book Now
             </button>
           </div>
         ))}
       </div>
+       {/* // Modal  component*/}
+      {selectedPlan && (
+  <div className="transition-all duration-300 scale-100 hover:scale-105"> 
+   <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center">
+    <div className="bg-white rounded-xl p-6 w-full max-w-md shadow-xl relative">
+      <h3 className="text-lg font-semibold text-center mb-4">
+        Book {selectedPlan}
+      </h3>
+      <p className="text-gray-600 text-sm text-center mb-6">
+        You're selecting the <strong>{selectedPlan}</strong> plan. Would you like to continue?
+      </p>
+
+      <div className="flex justify-center gap-4">
+        <button
+          onClick={() => {
+            // Redirect to booking page
+            window.location.href = `/book?plan=${encodeURIComponent(selectedPlan)}`;
+          }}
+          className="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-lg transition"
+        >
+          Yes, Book Now
+        </button>
+        <button
+          onClick={() => setSelectedPlan(null)}
+          className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+)}
+
 
       </div>
     </section>

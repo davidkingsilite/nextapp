@@ -1,4 +1,5 @@
 import Company from "@/components/AboutCompany";
+import BackToTop from "@/components/BackToTop";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import Divider from "@/components/Divider";
@@ -26,6 +27,7 @@ export default function Home() {
          </div>
          <Divider />
          <ServicesList />
+         <BackToTop />
          <Solution />
          <ExpertTeam />
          <Company />

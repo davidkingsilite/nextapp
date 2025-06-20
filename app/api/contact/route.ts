@@ -21,15 +21,17 @@ export async function POST(request: Request) {
     });
 
     await transporter.sendMail({
-      from: process.env.EMAIL_USERNAME,
-      to: process.env.EMAIL_RECEIVER, // where you want to receive the emails
-      subject: `New Contact Form Submission from ${name}`,
-      html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong><br/>${message}</p>
-      `,
-    });
+        from: `"${name}" <${email}>`, // user who submitted the form
+        to: process.env.EMAIL_RECEIVER,
+        replyTo: email, // helpful when replying
+        subject: `New Contact Form Submission from ${name}`,
+        html: `
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong><br/>${message}</p>
+        `,
+      });
+      
 
     return NextResponse.json({ message: 'Email sent successfully' });
   } catch (error) {

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import dbConnect from '@/lib/mongoose';
+import dbConnect from '@/lib/connectDB';
 import { Blog } from '@/models/Blog';
 
 export const GET = async () => {

@@ -23,6 +23,6 @@ export const navbarLinks = [
     {
         id: 5,
         title: "Contact",
-        url: "/contact"
+        url: "/contact-us"
     },
    ]
