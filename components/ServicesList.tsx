@@ -1,78 +1,138 @@
-import React from 'react'
-import Services from './Services'
-import CustomButton from './CustomBotton'
+
+
+'use client';
+
+import React, { useRef, useState } from 'react';
+import Services from './Services';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const ServicesList = () => {
 
-    const itemData = [
-        { 
-          id: 0,
-          img: "/Image.png",
-          alt: "clay sculpture",
-          title: "Office Cleaning",
-          description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"
-         
-        },
-          {
-          id: 1,  
-          img: "/Image (1).png",
-          alt: "clay sculpture",
-          title: "Spring Cleaning",
-          description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+  const swiperRef = useRef<any>(null);
 
-         
-        },
-          {
-          id: 2,  
-          img: "/Image (2).png",
-          alt: "clay sculpture",
-          title: "House Cleaning",
-          description: "While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:"
 
-        },
-        //   {
-        //   id: 3,
-        //   img: "/Rectangle 2545.png",
-        //   img2: "/Vector (1).svg", 
-        //   img3: "/login.svg", 
-        //   alt: "clay sculpture",
-        //   title: "",
-         
-        // },
-        //   {
-        //   id: 4,  
-        //   img: "/Rectangle 2547.png",
-        //   img2: "/Vector (1).svg", 
-        //   img3: "/login.svg", 
-        //   alt: "clay sculpture",
-        //   title: "",
-         
-        // },
-        //   {
-        //   id: 5,  
-        //   img: "/Rectangle 2551.png",
-        //   img2: "/Vector (1).svg", 
-        //   img3: "/login.svg", 
-        //   alt: "clay sculpture",
-        //   title: "",
-         
-        // }, 
-      ]
+  const itemData = [
+    {
+      id: 0,
+      img: '/Image.png',
+      alt: 'clay sculpture',
+      title: 'Office Cleaning',
+      description:
+        'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
+    },
+    {
+      id: 1,
+      img: '/Image (1).png',
+      alt: 'clay sculpture',
+      title: 'Spring Cleaning',
+      description:
+        'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
+    },
+    {
+      id: 2,
+      img: '/Image (2).png',
+      alt: 'clay sculpture',
+      title: 'House Cleaning',
+      description:
+        'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
+    },
+    {
+      id: 3,
+      img: '/Image (2).png',
+      alt: 'clay sculpture',
+      title: 'House Cleaning',
+      description:
+        'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
+    },
+    {
+      id: 4,
+      img: '/Image (2).png',
+      alt: 'clay sculpture',
+      title: 'House Cleaning',
+      description:
+        'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
+    },
+    {
+      id: 5,
+      img: '/Image (2).png',
+      alt: 'clay sculpture',
+      title: 'House Cleaning',
+      description:
+        'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
+    },
+  ];
+
+  const handleSwiperChange = () => {
+    if (!swiperRef.current) return;
+
+    setIsBeginning(swiperRef.current.isBeginning);
+    setIsEnd(swiperRef.current.isEnd);
+  };
+
 
   return (
-    <div className='grid grid-cols-3 w-full gap-5 justify-center items-center max-w-fit relative pb-14'>
-        {itemData.map((item)=>(
-                <Services item={item} key={item.id} />
-      
-                 ))}
-         {/* <CustomButton
-        title=''
-        btnType='button'
-        containerStyles='absolute left-[65rem] top-[160px] rounded-full bg-primary-green-100 py-2 px-4 '
-        rightIcon='/Icon.png'
-      />         */}
-    </div>
-  )
-}
+    <div className="relative max-w-7xl mx-auto">
+    
+      {/* Custom Arrows */}
+      <div className="relative">
+      <button
+          className={`custom-prev absolute top-1/3 -left-6 -translate-y-1/2 z-10 p-2 rounded-full shadow ${
+            isBeginning ? 'bg-gray-300 cursor-not-allowed' : 'bg-green-500 hover:bg-green-600'
+          }`}
+          disabled={isBeginning}
+        >
+          <ArrowLeft className="w-5 h-5 text-white" />
+        </button>
 
-export default ServicesList
+        <button
+          className={`custom-next absolute top-1/3 -right-6 -translate-y-1/2 z-10 p-2 rounded-full shadow ${
+            isEnd ? 'bg-gray-300 cursor-not-allowed' : 'bg-green-500 hover:bg-green-600'
+          }`}
+          disabled={isEnd}
+        >
+          <ArrowRight className="w-5 h-5 text-white" />
+        </button>
+
+     
+      <Swiper
+        modules={[Navigation]}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+          setIsBeginning(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
+        onSlideChange={handleSwiperChange}
+        navigation={{
+          nextEl: '.custom-next',
+          prevEl: '.custom-prev',
+        }}
+        spaceBetween={5}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="p-5 flex justify-center items-center"
+      >
+        {itemData.map((item) => (
+          <SwiperSlide key={item.id}>
+            <div className="h-full flex justify-center items-center p-4">
+              <Services item={item} />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      </div>
+    </div>
+  );
+};
+
+export default ServicesList;
+

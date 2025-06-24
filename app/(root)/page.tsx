@@ -15,14 +15,14 @@ export default function Home() {
   
   return (
 
-      <main className="relative max-w-fit ">
+      <main className="relative max-w-fit">
         <Hero />
-       <div className="max-w-fit mx-auto pl-[100px] pr-[100px] pt-20 pb-10">
-         <div className="flex justify-between font-bevietnam gap-20 pb-1">
+       <div className="max-w-fit mx-auto px-8 sm:px-10 md:px-16 lg:px-28 pt-10 md:pt-20 pb-10">
+         <div className="flex justify-between font-bevietnam gap-10 sm:gap-20">
           <h1 className="text-[25px] font-bold">We Always Provide The Best Services</h1>
           <div className="flex flex-col">
                <h3 className="text-[18px]">Services</h3>
-               <p className="text-xs">While we can customize youe cleaning services to your needs, most clients schedule regular cleaning services:</p>
+               <p className="text-xs">While we can customize your cleaning services to your needs, most clients schedule regular cleaning services:</p>
           </div>
          </div>
          <Divider />

@@ -8,12 +8,12 @@ export const navbarLinks = [
     {
         id: 2,
         title: "About us",
-        url: "/portfolio"
+        url: "/about-us"
     },
     {
         id: 3,
-        title: "Service",
-        url: "/service"
+        title: "Services",
+        url: "/services"
     },
     {
         id: 4,

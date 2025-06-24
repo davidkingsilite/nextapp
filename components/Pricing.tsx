@@ -86,6 +86,17 @@ export default function Pricing() {
   const [planType, setPlanType] = useState<'monthly' | 'yearly'>('monthly');
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
 
+  const handleCheckout = async () => {
+    const res = await fetch('/api/checkout', {
+      method: 'POST',
+      body: JSON.stringify({ plan: selectedPlan, email: userEmail }),
+    });
+  
+    const data = await res.json();
+    window.location.href = data.url; // Redirect to Stripe Checkout
+  };
+  
+
 
   return (
     <section className="relative z-0">
@@ -121,14 +132,14 @@ export default function Pricing() {
       </div>
 
       {/* Plans */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-8 relative">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-10 max-w-6xl mx-auto mt-8 px-4 sm:px-6">
         {plans[planType].map((plan) => (
           <div
             key={plan.title}
-            className={`rounded-xl shadow-lg p-6 flex flex-col items-center justify-between ${plan.title === 'ENTERPRISE PACKAGE' ? 'border bg-green-50 outline outline-1 outline-green-500' : 'border bg-white'} `}
+            className={`relative rounded-xl shadow-lg p-6 flex flex-col items-center justify-between ${plan.title === 'ENTERPRISE PACKAGE' ? 'border bg-green-50 outline outline-1 outline-green-500' : 'border bg-white'} `}
           >
             {plan.title === 'ENTERPRISE PACKAGE' && (
-             <span className="text-xs uppercase text-white bg-green-500 px-2 py-1 rounded-full absolute top-0">
+             <span className="text-sm font-bold uppercase text-white bg-green-500 px-2 py-1 rounded-full absolute -top-4">
                Most Popular
              </span>
               )}
@@ -137,7 +148,7 @@ export default function Pricing() {
               <span className="text-3xl font-bold text-green-600">{plan.price}</span>
               <span className="text-sm text-gray-500">/{planType}</span>
             </div>
-            <ul className="text-gray-600 text-sm mb-6 space-y-2 text-left">
+            <ul className="text-gray-600 text-xl md:text-sm  mb-6 space-y-2 text-left">
               {plan.features.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
                   <span>•</span> {item}
@@ -153,6 +164,7 @@ export default function Pricing() {
         ))}
       </div>
        {/* // Modal  component*/}
+      
       {selectedPlan && (
   <div className="transition-all duration-300 scale-100 hover:scale-105"> 
    <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center">
@@ -175,7 +187,10 @@ export default function Pricing() {
           Yes, Book Now
         </button>
         <button
-          onClick={() => setSelectedPlan(null)}
+          onClick={() => {
+            setSelectedPlan(null);
+            handleCheckout;
+          }}
           className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition"
         >
           Cancel
@@ -185,8 +200,6 @@ export default function Pricing() {
   </div>
   </div>
 )}
-
-
       </div>
     </section>
   );

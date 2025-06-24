@@ -6,31 +6,31 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    name: 'Robert Fox',
-    role: 'Business Man',
+    name: 'Anna Fox',
+    role: 'Business Woman',
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
     image: '/clientPic1.png', // Replace with actual image URL or static import
   },
   {
-    name: 'David Fox',
-    role: 'Business Man',
+    name: 'Claire Whitmore',
+    role: 'Business Woman',
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
     image: '/clientPic1.png', // Replace with actual image URL or static import
   },
   {
-    name: 'Anita Lisa',
-    role: 'Business Man',
+    name: 'Emily Zhang',
+    role: 'Business Woman',
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
     image: '/clientPic1.png', // Replace with actual image URL or static import
   },
   {
-    name: 'Robert John',
+    name: 'Marcus Ellington',
     role: 'Business Man',
     rating: 5,
     message:
@@ -84,35 +84,31 @@ export default function Testimonials() {
 
         {/* Right: Testimonial Card */}
         <div className="relative">
-          <div className="rounded-2xl border-2 border-green-500 p-6 flex items-start gap-6 bg-white shadow-md overflow-hidden">
-            {/* <img
-              src={image}
-              alt={name}
-              className="w-28 h-28 rounded-xl object-cover"
-            /> */}
+          <div className="rounded-2xl border-2 border-green-500 p-6 flex flex-col sm:flex-row items-start gap-6 bg-white shadow-md overflow-hidden">
             <Image
                src={image}
                alt={name}
                width={130}
                height={200}
-               className='w-28 h-44 rounded-xl object-cover'
+               className=' rounded-xl object-cover'
             />
+            
+            <div className='relative'>
+               <div className="flex-1">
+                 <h3 className="text-lg font-semibold">{name}</h3>
+                 <p className="text-sm text-gray-500">{role}</p>
 
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold">{name}</h3>
-              <p className="text-sm text-gray-500">{role}</p>
-
-              <div className="flex items-center gap-1 my-2">
-                {Array.from({ length: rating }).map((_, i) => (
+               <div className="flex items-center gap-1 my-2">
+                 {Array.from({ length: rating }).map((_, i) => (
                   <span key={i} className="text-yellow-500 text-xl">★</span>
-                ))}
-              </div>
-
-              <p className="text-gray-600 text-sm">{message}</p>
+                  ))}
+               </div>
+                 <p className="text-gray-600 text-sm">{message}</p>
             </div>
 
-            <div className="absolute top-4 right-4 bg-green-500 rounded-md p-2">
-              <Quote className="text-white" size={24} />
+               <div className="absolute top-4 right-4 bg-green-500 rounded-md p-2">
+                  <Quote className="text-white" size={24} />
+               </div>
             </div>
           </div>
         </div>
