@@ -5,6 +5,10 @@ export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus('Sending...');
@@ -25,13 +29,13 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4 bg-gray-50 p-6 rounded-xl shadow-sm flex flex-col">
       <input
         type="text"
         name="name"
         placeholder="Name"
         value={form.name}
-        onChange={(e) => setForm({ ...form, name: e.target.value })}
+        onChange={handleChange}
         className="w-full border p-2 rounded"
         required
       />
@@ -40,7 +44,7 @@ export default function ContactForm() {
         name="email"
         placeholder="Email"
         value={form.email}
-        onChange={(e) => setForm({ ...form, email: e.target.value })}
+        onChange={handleChange}
         className="w-full border p-2 rounded"
         required
       />
@@ -48,7 +52,7 @@ export default function ContactForm() {
         name="message"
         placeholder="Message"
         value={form.message}
-        onChange={(e) => setForm({ ...form, message: e.target.value })}
+        onChange={handleChange}
         className="w-full border p-2 rounded"
         rows={5}
         required

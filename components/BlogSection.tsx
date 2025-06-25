@@ -4,43 +4,77 @@ import Image from 'next/image';
 import Divider from './Divider';
 import Link from 'next/link';
 
-
-
-
-
-
-const blogs = [
+const blogPosts = [
   {
-    slug: 'eco-friendly-cleaning',
-    title: 'Eco-Friendly Cleaning: How We Keep Your Home Green',
-    date: 'JUNE 6, 2025',
-    author: 'LISA NOON',
-    excerpt:
-      'Learn about our commitment to eco-friendly practices. We share the eco-conscious products and any others...',
-    img: '/image (10).png',
+    id: 1,
+    slug: '10-proven-tips-keeping-home-spotless',
+    title: '10 Proven Tips for Keeping Your Home Spotless',
+    description:
+      'Learn expert techniques to maintain a clean and organized home without spending all day scrubbing.',
+    image: '/Image-(10).png',
+    date: 'June 15, 2025',
+    author: 'Danielle Harper',
+    category: 'Home Cleaning',
     highlight: false,
   },
   {
-    slug: 'clean-home-between-visits',
-    title: 'How to Maintain a Clean Home Between Professional Visits',
-    date: 'APRIL 12, 2025',
-    author: 'JOHN HELTON',
-    excerpt:
-      'Get practical advice on maintaining cleanliness between our scheduled visits. These easy-to-follow tips...',
-    img: '/image (11).png',
+    id: 2,
+    slug: 'office-cleaning-matters',
+    title: 'Office Cleaning: Why It Matters for Productivity',
+    description:
+      'Explore how a clean office contributes to employee satisfaction, productivity, and client impressions.',
+    image: '/Image-(11).png',
+    date: 'May 30, 2025',
+    author: 'Claire Whitmore',
+    category: 'Office Cleaning',
     highlight: true,
   },
   {
-    slug: 'benefits-of-regular-cleaning',
-    title: 'The Benefits of Regular Professional Cleaning',
-    date: 'FEB 6, 2025',
-    author: 'JOHN HELTON',
-    excerpt:
-      'Understand the numerous advantages of scheduling regular professional cleanings. From improving indoor air...',
-    img: '/image (12).png',
+    id: 3,
+    slug: 'eco-friendly-cleaning',
+    title: 'Eco-Friendly Cleaning Products That Actually Work',
+    description:
+      'Discover our favorite green cleaning products that are safe for your family and the planet.',
+    image: '/Image-(12).png',
+    date: 'May 10, 2025',
+    author: 'Olivia Mensah',
+    category: 'Green Cleaning',
     highlight: false,
   },
 ];
+
+// const blogs = [
+//   {
+//     slug: 'eco-friendly-cleaning',
+//     title: 'Eco-Friendly Cleaning: How We Keep Your Home Green',
+//     date: 'JUNE 6, 2025',
+//     author: 'LISA NOON',
+//     excerpt:
+//       'Learn about our commitment to eco-friendly practices. We share the eco-conscious products and any others...',
+//     img: '/image-(10).png',
+//     highlight: false,
+//   },
+//   {
+//     slug: 'clean-home-between-visits',
+//     title: 'How to Maintain a Clean Home Between Professional Visits',
+//     date: 'APRIL 12, 2025',
+//     author: 'JOHN HELTON',
+//     excerpt:
+//       'Get practical advice on maintaining cleanliness between our scheduled visits. These easy-to-follow tips...',
+//     img: '/image-(11).png',
+//     highlight: true,
+//   },
+//   {
+//     slug: 'benefits-of-regular-cleaning',
+//     title: 'The Benefits of Regular Professional Cleaning',
+//     date: 'FEB 6, 2025',
+//     author: 'JOHN HELTON',
+//     excerpt:
+//       'Understand the numerous advantages of scheduling regular professional cleanings. From improving indoor air...',
+//     img: '/image-(12).png',
+//     highlight: false,
+//   },
+// ];
 
 export default function BlogSection() {
   return (
@@ -62,20 +96,20 @@ export default function BlogSection() {
         </div>
           <Divider />
         <div className="grid md:grid-cols-3 gap-6">
-          {blogs.map((blog, idx) => (
+          {blogPosts.map((blog, idx) => (
             <Link href={`/blog/${blog.slug}`} key={idx}> 
             <div className={`rounded-3xl overflow-hidden outline outline-1 outline-green-500 lg:hover:outline-2 outline-offset-2`}
             >
-              <div className="h-60 relative">
+              <div className="h-60 w-full relative">
                 <Image
-                  src={blog.img}
+                  src={blog.image}
                   alt={blog.title}
                   fill
-                  className="object-cover"
+                  className="object-cover w-full h-full"
                   />
               </div>
               <div
-                className={`p-6 flex-wrap items-center flex text-center justify-center font-bevietnam ${
+                className={`p-6 items-center flex flex-col text-center justify-center font-bevietnam ${
                   blog.highlight ? 'bg-green-50 text-black-100' : 'text-black-100'
                 }`}
                 >
@@ -89,7 +123,7 @@ export default function BlogSection() {
                   >
                   {blog.title}
                 </h3>
-                <p className="text-sm text-gray-700 mb-4">{blog.excerpt}</p>
+                <p className="text-sm text-gray-700 mb-4">{blog.description}</p>
                 <button
                   className={`text-sm font-medium min-w-[240px] ${
                     blog.highlight
@@ -101,10 +135,12 @@ export default function BlogSection() {
                 </button>
               </div>
             </div>
-                  </Link>
+            </Link>
           ))}
         </div>
       </div>
     </section>
   );
 }
+
+

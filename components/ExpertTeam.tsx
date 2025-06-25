@@ -15,7 +15,7 @@ const ExpertTeam = () => {
           img5: "/instagram.svg", 
           img6: "/discord.svg", 
           alt: "expert cleaner 1",
-          title: "Luis Carter",
+          title: "Claire Whitmore",
           description: "She is an expert cleaning staff member who delights in client's satisfaction."
          
         },

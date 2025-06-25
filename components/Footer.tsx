@@ -56,8 +56,8 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Newsletter */}
-        <div>
-          <h3 className="font-semibold">Newsletter</h3>
+        <div className="">
+          <h3 className="font-semibold pb-4">Newsletter</h3>
           <FooterNewsletter />
         </div>
       </div>

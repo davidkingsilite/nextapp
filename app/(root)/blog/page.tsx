@@ -1,20 +1,3 @@
-// import BlogSection from '@/components/BlogSection'
-// import React from 'react'
-
-// const page = () => {
-   
-//   return (
-//     <div className='my-8 mx-8'>
-//         <div><h1 className='text-3xl font-bold flex justify-center'>Welcome to our Blog</h1></div>
-//         <BlogSection />
-        
-
-//     </div>
-//   )
-// }
-
-// export default page
-
 'use client';
 
 import Image from 'next/image';
@@ -27,7 +10,7 @@ const blogPosts = [
     title: '10 Proven Tips for Keeping Your Home Spotless',
     description:
       'Learn expert techniques to maintain a clean and organized home without spending all day scrubbing.',
-    image: '/blog/cleaning1.jpg',
+    image: '/Image-(10).png',
     date: 'June 15, 2025',
     author: 'Danielle Harper',
     category: 'Home Cleaning',
@@ -37,7 +20,7 @@ const blogPosts = [
     title: 'Office Cleaning: Why It Matters for Productivity',
     description:
       'Explore how a clean office contributes to employee satisfaction, productivity, and client impressions.',
-    image: '/blog/cleaning2.jpg',
+    image: '/Image-(11).png',
     date: 'May 30, 2025',
     author: 'Claire Whitmore',
     category: 'Office Cleaning',
@@ -47,7 +30,7 @@ const blogPosts = [
     title: 'Eco-Friendly Cleaning Products That Actually Work',
     description:
       'Discover our favorite green cleaning products that are safe for your family and the planet.',
-    image: '/blog/cleaning3.jpg',
+    image: '/Image-(12).png',
     date: 'May 10, 2025',
     author: 'Olivia Mensah',
     category: 'Green Cleaning',
@@ -103,15 +86,13 @@ const BlogPage = () => {
         <p className="text-sm text-gray-700 mb-6">
           Subscribe to our newsletter for regular updates and promotions.
         </p>
-        <Link
-          href="/newsletter"
-          className="inline-block bg-primary-green-100 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition"
-        >
+        <p className="inline-block bg-primary-green-100 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-green-600 transition">
           Subscribe Now
-        </Link>
+          </p>
       </section>
     </main>
   );
 };
 
 export default BlogPage;
+

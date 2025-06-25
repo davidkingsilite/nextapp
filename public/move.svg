@@ -1,0 +1,10 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="35" width="40" height="30" rx="4" fill="#FFD54F"/>
+  <polygon points="40,20 20,35 60,35" fill="#FFA000"/>
+  <polyline points="30,65 50,65" stroke="#FFA000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#FFA000"/>
+    </marker>
+  </defs>
+</svg>

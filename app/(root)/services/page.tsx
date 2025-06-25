@@ -22,37 +22,37 @@ const services = [
     title: 'Residential Cleaning',
     description:
       'Thorough cleaning for your entire home — bedrooms, bathrooms, kitchens, and more.',
-    icon: '/icons/house.svg',
+    icon: '/residential.svg',
   },
   {
     title: 'Office Cleaning',
     description:
       'Professional, scheduled cleaning services for commercial and office environments.',
-    icon: '/icons/office.svg',
+    icon: '/office.svg',
   },
   {
     title: 'Move-In / Move-Out',
     description:
       'Detailed top-to-bottom cleaning for when you’re moving in or out of a property.',
-    icon: '/icons/move.svg',
+    icon: '/move.svg',
   },
   {
     title: 'Post-Construction',
     description:
       'Remove dust, debris, and construction residue with our deep cleaning expertise.',
-    icon: '/icons/construction.svg',
+    icon: '/construction.svg',
   },
   {
     title: 'Deep Cleaning',
     description:
       'Extra attention to neglected or high-traffic areas for a fresher, healthier space.',
-    icon: '/icons/deep.svg',
+    icon: '/deep.svg',
   },
   {
     title: 'Window Cleaning',
     description:
       'Crystal-clear results with streak-free window cleaning, inside and out.',
-    icon: '/icons/window.svg',
+    icon: '/window.svg',
   },
 ];
 
@@ -98,17 +98,17 @@ const ServicePage = () => {
             {
               title: 'Custom Plans',
               text: 'Flexible packages tailored to your home or office’s size and needs.',
-              icon: '/icons/plan.svg',
+              icon: '/plan.svg',
             },
             {
               title: 'Trusted Cleaners',
               text: 'Background-checked, experienced staff you can trust with your space.',
-              icon: '/icons/trust.svg',
+              icon: '/trust.svg',
             },
             {
               title: 'Eco Products',
               text: 'We use safe, non-toxic cleaning products to protect your environment.',
-              icon: '/icons/eco.svg',
+              icon: '/eco.svg',
             },
           ].map((item, i) => (
             <div

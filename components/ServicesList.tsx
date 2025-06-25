@@ -21,15 +21,15 @@ const ServicesList = () => {
     {
       id: 0,
       img: '/Image.png',
-      alt: 'clay sculpture',
-      title: 'Office Cleaning',
+      alt: 'Residentail cleaning',
+      title: 'Residential Cleaning',
       description:
         'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
     },
     {
       id: 1,
       img: '/Image (1).png',
-      alt: 'clay sculpture',
+      alt: 'Spring Cleaning',
       title: 'Spring Cleaning',
       description:
         'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
@@ -37,32 +37,32 @@ const ServicesList = () => {
     {
       id: 2,
       img: '/Image (2).png',
-      alt: 'clay sculpture',
-      title: 'House Cleaning',
+      alt: 'Office Cleaning',
+      title: 'Office Cleaning',
       description:
         'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
     },
     {
       id: 3,
       img: '/Image (2).png',
-      alt: 'clay sculpture',
-      title: 'House Cleaning',
+      alt: 'Move-in / Move-out',
+      title: 'Move-In / Move-Out',
       description:
         'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
     },
     {
       id: 4,
       img: '/Image (2).png',
-      alt: 'clay sculpture',
-      title: 'House Cleaning',
+      alt: 'Post-contruction',
+      title: 'Post-Construction',
       description:
         'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
     },
     {
       id: 5,
       img: '/Image (2).png',
-      alt: 'clay sculpture',
-      title: 'House Cleaning',
+      alt: 'Deep Cleaning',
+      title: 'Deep Cleaning',
       description:
         'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
     },

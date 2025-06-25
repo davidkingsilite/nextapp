@@ -1,17 +1,3 @@
-// import AboutSection from '@/components/AboutCompany';
-// import React from 'react'
-
-// const page = () => {
-//   return (
-//     <div>
-      
-//       <AboutSection />
-//     </div>
-//   )
-// }
-
-// export default page;
-
 'use client';
 
 import Image from 'next/image';
@@ -94,9 +80,9 @@ const AboutPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center">
           {[
-            { name: 'Jasmine Taylor', role: 'Lead Cleaner', img: '/team1.jpg' },
-            { name: 'Amina Bello', role: 'Operations Manager', img: '/team2.jpg' },
-            { name: 'Claire Whitmore', role: 'Quality Assurance', img: '/team3.jpg' },
+            { name: 'Claire Whitmore', role: 'Lead Cleaner', img: '/Image-(4).png' },
+            { name: 'Erick Reynolds', role: 'Operations Manager', img: '/Image-(5).png' },
+            { name: 'Jasmine Taylor', role: 'Quality Assurance', img: '/Image-(6).png' },
           ].map((member, i) => (
             <div key={i} className="flex flex-col items-center text-center">
               <Image
