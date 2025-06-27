@@ -4,18 +4,19 @@
 
 import React, { useRef, useState } from 'react';
 import Services from './Services';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide  } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import type { Swiper as SwiperCore } from 'swiper';
+
 
 const ServicesList = () => {
 
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-  const swiperRef = useRef<any>(null);
-
+  const swiperRef = useRef<SwiperCore | null>(null);
 
   const itemData = [
     {

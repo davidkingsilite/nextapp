@@ -43,38 +43,7 @@ const blogPosts = [
   },
 ];
 
-// const blogs = [
-//   {
-//     slug: 'eco-friendly-cleaning',
-//     title: 'Eco-Friendly Cleaning: How We Keep Your Home Green',
-//     date: 'JUNE 6, 2025',
-//     author: 'LISA NOON',
-//     excerpt:
-//       'Learn about our commitment to eco-friendly practices. We share the eco-conscious products and any others...',
-//     img: '/image-(10).png',
-//     highlight: false,
-//   },
-//   {
-//     slug: 'clean-home-between-visits',
-//     title: 'How to Maintain a Clean Home Between Professional Visits',
-//     date: 'APRIL 12, 2025',
-//     author: 'JOHN HELTON',
-//     excerpt:
-//       'Get practical advice on maintaining cleanliness between our scheduled visits. These easy-to-follow tips...',
-//     img: '/image-(11).png',
-//     highlight: true,
-//   },
-//   {
-//     slug: 'benefits-of-regular-cleaning',
-//     title: 'The Benefits of Regular Professional Cleaning',
-//     date: 'FEB 6, 2025',
-//     author: 'JOHN HELTON',
-//     excerpt:
-//       'Understand the numerous advantages of scheduling regular professional cleanings. From improving indoor air...',
-//     img: '/image-(12).png',
-//     highlight: false,
-//   },
-// ];
+
 
 export default function BlogSection() {
   return (

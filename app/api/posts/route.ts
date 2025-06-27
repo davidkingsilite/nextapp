@@ -8,6 +8,7 @@ export const GET = async () => {
     const posts = await Blog.find().sort({ date: -1 });
     return NextResponse.json(posts);
   } catch (error) {
+    console.error('Error creating post:', error);
     return NextResponse.json({ message: 'Error loading posts' }, { status: 500 });
   } 
 };

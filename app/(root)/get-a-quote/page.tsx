@@ -18,6 +18,7 @@ export default function QuoteForm() {
   const [submitting, setSubmitting] = useState(false);
   const [response, setResponse] = useState('');
 
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -60,6 +61,7 @@ export default function QuoteForm() {
       }
     } catch (error) {
       setResponse('Server error. Please try again later.');
+      console.error('Error submitting quote:', error);
     } finally {
       setSubmitting(false);
     }
@@ -77,7 +79,7 @@ export default function QuoteForm() {
       >
         <h1 className="text-3xl font-bold mb-2">Request a Free Quote</h1>
         <p className="text-gray-600 max-w-xl mx-auto">
-          Fill in the form below and we’ll get back to you with a custom quote tailored to your cleaning needs.
+          Fill in the form below and we&apos;ll get back to you with a custom quote tailored to your cleaning needs.
         </p>
          </motion.div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">

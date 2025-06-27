@@ -14,11 +14,14 @@ declare global {
   };
 }
 
-// Ensure it's defined on globalThis
-global.mongoose ||= {
-  conn: null,
-  promise: null,
-};
+// Safe fallback for global object in strict mode
+if (!global.mongoose) {
+  global.mongoose = {
+    conn: null,
+    promise: null,
+  };
+}
+
 
 // ✅ This explicit type fixes the error
 const cached: {

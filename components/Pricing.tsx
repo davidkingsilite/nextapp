@@ -173,7 +173,7 @@ export default function Pricing() {
         Book {selectedPlan}
       </h3>
       <p className="text-gray-600 text-sm text-center mb-6">
-        You're selecting the <strong>{selectedPlan}</strong> plan. Would you like to continue?
+        You&apos;re selecting the <strong>{selectedPlan}</strong> plan. Would you like to continue?
       </p>
 
       <div className="flex justify-center gap-4">
@@ -189,7 +189,7 @@ export default function Pricing() {
         <button
           onClick={() => {
             setSelectedPlan(null);
-            handleCheckout;
+            handleCheckout();
           }}
           className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition"
         >

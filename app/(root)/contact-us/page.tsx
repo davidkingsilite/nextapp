@@ -12,7 +12,7 @@ const ContactPage = () => {
       <section className="text-center max-w-2xl mx-auto mb-16">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">Get In Touch</h1>
         <p className="text-gray-600 text-sm md:text-base">
-          Have questions or want to book a service? Fill out the form or reach us directly — we're happy to help.
+          Have questions or want to book a service? Fill out the form or reach us directly — we&apos;re happy to help.
         </p>
       </section>
 

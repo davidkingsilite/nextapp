@@ -1,6 +1,16 @@
 import nodemailer from 'nodemailer';
 
-export const sendEmail = async (quote: any) => {
+interface QuoteTypeProps {
+  quote:{
+    name: string,
+    email: string,
+    phone: number,
+    service: string,
+    message: string,
+  }
+}
+
+export const sendEmail = async ({quote}: QuoteTypeProps) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
