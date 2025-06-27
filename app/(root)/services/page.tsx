@@ -136,7 +136,7 @@ const ServicePage = () => {
           Join hundreds of happy clients enjoying spotless homes and offices.
         </p>
         <Link
-          href="/contact"
+          href="/get-a-quote"
           className="inline-block bg-white text-primary-green-100 px-6 py-2 font-medium text-sm rounded-full hover:bg-gray-100 transition"
         >
           Get a Free Quote

@@ -1,21 +1,9 @@
-'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 
 const ContactPage = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Submitted:', form);
-    // TODO: send data to backend/email
-  };
 
   return (
     <main className="px-4 py-16 md:px-8 lg:px-20 font-bevietnam bg-white text-black-100">

@@ -106,7 +106,7 @@ const AboutPage = () => {
           Contact us today and let our expert team handle your cleaning needs.
         </p>
         <a
-          href="/contact"
+          href="/get-a-quote"
           className="inline-block bg-white text-primary-green-100 font-semibold px-6 py-2 rounded-full text-sm hover:bg-gray-100 transition"
         >
           Get a Quote

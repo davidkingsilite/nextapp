@@ -11,6 +11,18 @@ export default function ContactForm() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+
+    if (!form.name || !form.email) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(form.email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
     setStatus('Sending...');
 
     const res = await fetch('/api/contact', {
@@ -18,7 +30,7 @@ export default function ContactForm() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
     });
-
+ 
     const data = await res.json();
     if (res.ok) {
       setStatus('Message sent ✅');

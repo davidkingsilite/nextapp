@@ -30,8 +30,8 @@ export default function QuoteForm() {
                 return;
               }
               
-              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-              if (!emailRegex.test(form.email)) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
                 alert('Please enter a valid email address.');
                 return;
               }

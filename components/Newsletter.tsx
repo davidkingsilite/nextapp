@@ -11,6 +11,13 @@ export default function FooterNewsletter() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
     setStatus('sending');
     setMessage('');
 
