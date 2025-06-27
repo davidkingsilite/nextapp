@@ -11,7 +11,7 @@ interface Params {
 
 export default async function BlogPost({ params }: { params:Params }) {
 
-  const { slug } = await params; 
+  const { slug } = params; 
 
   const res = await fetch(`http://localhost:3000/api/posts/${slug}`, { cache: 'no-store' });
 
