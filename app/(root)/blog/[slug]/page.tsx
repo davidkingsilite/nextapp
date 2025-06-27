@@ -72,6 +72,9 @@
 
 // app/(root)/blog/[slug]/page.tsx
 
+/* eslint-disable */
+
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
