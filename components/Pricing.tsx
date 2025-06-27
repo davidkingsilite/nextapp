@@ -89,7 +89,7 @@ export default function Pricing() {
   const handleCheckout = async () => {
     const res = await fetch('/api/checkout', {
       method: 'POST',
-      body: JSON.stringify({ plan: selectedPlan, email: userEmail }),
+      body: JSON.stringify({ plan: selectedPlan/* ,email: userEmail */ }),
     });
   
     const data = await res.json();
