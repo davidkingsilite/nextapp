@@ -92,13 +92,13 @@ export default function AboutSection() {
               title="Book Now"
               btnType="button"
               containerStyles="text-white rounded-md bg-primary-green-100 hover:bg-green-600 min-w-[130px] transition"
-              handleClick={() => router.push('/dashboard/login')}
+              handleClick={() => router.push('/get-a-quote')}
             />
             <CustomButton
               title="Know More"
               btnType="button"
               containerStyles="text-black-100 rounded-md min-w-[130px] outline outline-1 hover:bg-green-50 transition"
-              handleClick={() => router.push('/dashboard/login')}
+              handleClick={() => router.push('/about-us')}
             />
           </div>
         </motion.div>

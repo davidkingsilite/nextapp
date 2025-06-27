@@ -36,7 +36,16 @@ module.exports = {
           'pattern': "url('/cleaning-bg.png')",
           'hero-bg': "url('/hero.png')",
           'hero': "url('/hero_lamge.png')"
-        }
+        },
+        animation: {
+          marquee: 'marquee 15s linear infinite',
+        },
+        keyframes: {
+          marquee: {
+            '0%': { transform: 'translateX(100%)' },
+            '100%': { transform: 'translateX(-100%)' },
+          },
+        },
       },
     },
     plugins: [

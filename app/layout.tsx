@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Be_Vietnam_Pro, Poppins, Lato, Outfit} from "next/font/google";
 import "./globals.css";
+import NewsFlash from "@/components/NewsFlash";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,7 +56,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${beVietnam.variable} ${poppins.variable} ${lato.variable} ${outfit.variable} antialiased`}
       >
-        ROOT Layout
+        <NewsFlash />
         {children}
       </body>
     </html>

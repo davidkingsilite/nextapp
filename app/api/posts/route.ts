@@ -9,5 +9,5 @@ export const GET = async () => {
     return NextResponse.json(posts);
   } catch (error) {
     return NextResponse.json({ message: 'Error loading posts' }, { status: 500 });
-  }
+  } 
 };

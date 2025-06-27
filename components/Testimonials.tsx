@@ -19,7 +19,7 @@ const testimonials = [
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/clientPic1.png', // Replace with actual image URL or static import
+    image: '/Gemini.png', // Replace with actual image URL or static import
   },
   {
     name: 'Emily Zhang',
@@ -27,7 +27,7 @@ const testimonials = [
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/clientPic1.png', // Replace with actual image URL or static import
+    image: '/client2.png', // Replace with actual image URL or static import
   },
   {
     name: 'Marcus Ellington',
@@ -35,7 +35,7 @@ const testimonials = [
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/clientPic1.png', // Replace with actual image URL or static import
+    image: '/danny-byers.png', // Replace with actual image URL or static import
   },
   
 ];

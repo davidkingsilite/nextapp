@@ -44,7 +44,7 @@ const Hero = () => {
                 title="Get Now"
                 btnType="button"
                 containerStyles="text-white bg-primary-green-100 hover:bg-green-600 rounded px-6 py-2 text-sm font-medium"
-                handleClick={() => router.push('/dashboard/login')}
+                handleClick={() => router.push('/get-a-quote')}
               />
               <CustomButton
                 title="View all Services"

@@ -38,28 +38,28 @@ async function allBlogs() {
         2) Declutter Often
         The less stuff you have, the less there is to clean. Keep surfaces tidy and get rid of items you no longer need.
         
-        3)Clean As You Go
+        3) Clean As You Go
         Wipe down kitchen counters, bathroom sinks, and dining tables right after use to prevent buildup.
         
-        4)Set a Cleaning Schedule
+        4) Set a Cleaning Schedule
         Assign specific tasks to different days of the week so cleaning doesn’t pile up.
         
-        5)Keep Cleaning Supplies Handy
+        5) Keep Cleaning Supplies Handy
         Store cleaning essentials in easy-to-reach areas so you can quickly tackle messes.
         
-        6)Do a 15-Minute Daily Sweep
+        6) Do a 15-Minute Daily Sweep
         Spend just 15 minutes picking up, wiping down, and organizing each day — it adds up.
         
-        7)Use Doormats
+        7) Use Doormats
         Place mats at all entrances to catch dirt before it gets inside.
         
-        8)Keep Laundry Moving
+        8) Keep Laundry Moving
         Don’t let laundry pile up — do small loads regularly to stay ahead.
         
-        9)Tackle One Room at a Time
+        9) Tackle One Room at a Time
         Focusing on one area keeps the process manageable and satisfying.
         
-        10)Involve the Whole Family
+        10) Involve the Whole Family
         Share the load! Even small kids can help with simple chores.
         
         By making these tips part of your routine, a spotless home becomes second nature — not a major chore.
@@ -78,22 +78,22 @@ async function allBlogs() {
         category: 'Office Cleaning',
         highlight: true,
         content: `
-        <p><strong>1. Boosts Focus and Efficiency</strong><br/>
-        Clutter and mess can be mentally distracting. A tidy workspace helps employees concentrate, prioritize tasks, and stay productive throughout the day.</p>
+        1. Boosts Focus and Efficiency
+        Clutter and mess can be mentally distracting. A tidy workspace helps employees concentrate, prioritize tasks, and stay productive throughout the day.
         
-        <p><strong>2. Reduces Sick Days</strong><br/>
-        Regular disinfection of shared spaces like desks, doorknobs, and kitchens minimizes the spread of germs. Fewer sick employees mean more consistent output.</p>
+        2. Reduces Sick Days
+        Regular disinfection of shared spaces like desks, doorknobs, and kitchens minimizes the spread of germs. Fewer sick employees mean more consistent output.
         
-        <p><strong>3. Improves Morale</strong><br/>
-        Cleanliness shows employees their health and comfort are valued. A fresh-smelling, neat environment lifts morale and encourages a positive attitude toward work.</p>
+        3. Improves Morale
+        Cleanliness shows employees their health and comfort are valued. A fresh-smelling, neat environment lifts morale and encourages a positive attitude toward work.
         
-        <p><strong>4. Enhances Professional Image</strong><br/>
-        Clients and visitors form immediate impressions. A spotless office reinforces trust, credibility, and professionalism — essential for any business.</p>
+        4. Enhances Professional Image
+        Clients and visitors form immediate impressions. A spotless office reinforces trust, credibility, and professionalism — essential for any business.
         
-        <p><strong>5. Protects Equipment and Investments</strong><br/>
-        Dust and grime can affect tech performance and reduce the lifespan of expensive equipment. Routine cleaning prevents unnecessary breakdowns.</p>
+        5. Protects Equipment and Investments
+        Dust and grime can affect tech performance and reduce the lifespan of expensive equipment. Routine cleaning prevents unnecessary breakdowns.
         
-        <p><em>Whether you're running a startup or managing a corporate space, a clean office is a smart investment in productivity.</em></p>
+        Whether you're running a startup or managing a corporate space, a clean office is a smart investment in productivity.
           `,
       },
       {
@@ -107,22 +107,22 @@ async function allBlogs() {
         author: 'Olivia Mensah',
         category: 'Green Cleaning',
         highlight: false,
-        content:`<p><strong>1. Vinegar & Baking Soda</strong><br/>
-        This classic combo tackles everything from clogged drains to dirty countertops. It’s non-toxic, cheap, and surprisingly powerful.</p>
+        content:`1. Vinegar & Baking Soda
+        This classic combo tackles everything from clogged drains to dirty countertops. It’s non-toxic, cheap, and surprisingly powerful.
         
-        <p><strong>2. Castile Soap</strong><br/>
-        A plant-based liquid soap that can be used to clean dishes, floors, and even your body. Dilute it for different uses around your home.</p>
+        2. Castile Soap
+        A plant-based liquid soap that can be used to clean dishes, floors, and even your body. Dilute it for different uses around your home.
         
-        <p><strong>3. Microfiber Cloths</strong><br/>
-        These reusable cloths trap dust and bacteria without chemicals. Just add water and start wiping!</p>
+        3. Microfiber Cloths
+        These reusable cloths trap dust and bacteria without chemicals. Just add water and start wiping!
         
-        <p><strong>4. Seventh Generation All-Purpose Cleaner</strong><br/>
-        A trusted eco-brand, their plant-based formulas cut through grease and grime with zero synthetic fragrances or dyes.</p>
+        4. Seventh Generation All-Purpose Cleaner
+        A trusted eco-brand, their plant-based formulas cut through grease and grime with zero synthetic fragrances or dyes.
         
-        <p><strong>5. Method Bathroom Cleaner</strong><br/>
-        Tough on soap scum but made from biodegradable ingredients, it leaves your bathroom fresh and guilt-free.</p>
+        5. Method Bathroom Cleaner
+        Tough on soap scum but made from biodegradable ingredients, it leaves your bathroom fresh and guilt-free.
         
-        <p><em>Going green doesn’t mean sacrificing clean. These eco-products deliver results — while keeping your home and planet healthy.</em></p>
+        Going green doesn’t mean sacrificing clean. These eco-products deliver results — while keeping your home and planet healthy.
         `
       },
     ]);

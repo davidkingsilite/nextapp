@@ -55,8 +55,8 @@ export default function Navbar() {
         <CustomButton
           title="Get a quote"
           btnType="button"
-          containerStyles="hidden md:flex text-primary-white rounded-full bg-primary-green-100 min-w-[130px] font-medium text-xs font-poppins"
-          handleClick={() => router.push('/dashboard/login')}
+          containerStyles="hidden md:flex text-primary-white rounded-full bg-primary-green-100 hover:bg-green-600 min-w-[130px] font-medium text-xs font-poppins"
+          handleClick={() => router.push('/get-a-quote')}
         />
       </nav>
 

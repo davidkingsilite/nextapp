@@ -1,6 +1,9 @@
+'use client'
+
 import Image from 'next/image';
-import React from 'react'
+import React from 'react';
 import CustomButton from './CustomBotton';
+import { useRouter } from 'next/navigation';
 
 interface ServicesProps {
   item:{
@@ -14,6 +17,9 @@ interface ServicesProps {
 
 
 const Services =({item}: ServicesProps) => {
+
+  const router = useRouter();
+
   return (
     <div className='flex flex-col flex-1 gap-5 max-w-sm w-full h-full'>
        <Image
@@ -32,6 +38,7 @@ const Services =({item}: ServicesProps) => {
           title='Book Now'
           btnType='button'
           containerStyles= "hover:text-primary-white rounded-[4.5px] text-black-100 hover:bg-primary-green-100 min-w-[130px] outline outline-1"
+          handleClick={() => router.push('/get-a-quote')}
           />
           </div>
       </div>

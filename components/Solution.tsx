@@ -24,7 +24,7 @@ const Solution = () => {
         {/* Left Text Section */}
         <div className="flex flex-col gap-5 max-w-md w-full">
           <div className="flex flex-col gap-3 text-black-100">
-            <p className="text-xs font-light uppercase tracking-wide">Affordable cleaning solutions</p>
+            <p className="text-xs font-light uppercase tracking-wide font-bevietnam">Affordable cleaning solutions</p>
             <h1 className="text-3xl font-semibold font-outfit leading-snug">
               High-Quality and Friendly Services at Fair Prices
             </h1>
@@ -36,8 +36,8 @@ const Solution = () => {
           <CustomButton
             title="Get a quote"
             btnType="button"
-            containerStyles="text-primary-white rounded-full bg-primary-green-100 min-w-[130px] font-medium text-xs font-poppins"
-            handleClick={() => router.push('/dashboard/login')}
+            containerStyles="text-primary-white rounded-full bg-primary-green-100 hover:bg-green-600 min-w-[130px] font-medium text-xs font-poppins"
+            handleClick={() => router.push('/get-a-quote')}
             />
           </div>
         </motion.div>

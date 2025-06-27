@@ -7,6 +7,7 @@ import React from 'react';
 const blogPosts = [
   {
     id: 1,
+    slug: '10-proven-tips-keeping-home-spotless',
     title: '10 Proven Tips for Keeping Your Home Spotless',
     description:
       'Learn expert techniques to maintain a clean and organized home without spending all day scrubbing.',
@@ -17,6 +18,7 @@ const blogPosts = [
   },
   {
     id: 2,
+    slug: 'office-cleaning-matters',
     title: 'Office Cleaning: Why It Matters for Productivity',
     description:
       'Explore how a clean office contributes to employee satisfaction, productivity, and client impressions.',
@@ -27,6 +29,7 @@ const blogPosts = [
   },
   {
     id: 3,
+    slug: 'eco-friendly-cleaning',
     title: 'Eco-Friendly Cleaning Products That Actually Work',
     description:
       'Discover our favorite green cleaning products that are safe for your family and the planet.',
@@ -57,9 +60,8 @@ const BlogPage = () => {
               <Image
                 src={post.image}
                 alt={post.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-t-xl"
+                fill
+                className="rounded-t-xl object-cover"
               />
             </div>
             <div className="p-5 flex flex-col gap-2">
@@ -70,7 +72,7 @@ const BlogPage = () => {
                 By <span className="text-black font-medium">{post.author}</span> · {post.date}
               </div>
               <Link
-                href={`/blog/${post.id}`}
+                href={`/blog/${post.slug}`}
                 className="mt-4 inline-block text-primary-green-100 font-semibold text-sm hover:underline"
               >
                 Read More →

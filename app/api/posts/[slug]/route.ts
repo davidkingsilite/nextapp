@@ -18,5 +18,5 @@ export async function GET(request: Request, context: { params: { slug: string } 
     return new NextResponse(JSON.stringify({ message: 'Not found' }), { status: 404 });
   }
 
-  return NextResponse.json(post, { status: 200 });
+  return NextResponse.json(post, { status: 200 }); 
 }
