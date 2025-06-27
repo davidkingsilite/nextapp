@@ -38,10 +38,11 @@ export default function FooterNewsletter() {
         setEmail('');
         setMessage(data.message); // Message like "Already subscribed"
       } else throw new Error(data.message || 'something went wrong');
-    } catch (err:any){
+    } catch (err: unknown) {
+      const error = err as Error;
       setStatus('error');
-      setMessage(err.message || 'Error submitting email');
-    }
+      setMessage(error.message || 'Error submitting email');
+    }    
   };
 
   return (

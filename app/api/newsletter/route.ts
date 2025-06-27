@@ -17,8 +17,8 @@ export async function POST(req: Request) {
   if (exists) return NextResponse.json({ message: 'Already subscribed' });
 
   const newSubscriber = await Subscriber.create({ email });
+  console.log('New subscriber:', newSubscriber.email); // or log ID, etc.
 
-  
 
   // Send welcome email
   const transporter = nodemailer.createTransport({
