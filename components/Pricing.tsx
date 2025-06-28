@@ -86,15 +86,15 @@ export default function Pricing() {
   const [planType, setPlanType] = useState<'monthly' | 'yearly'>('monthly');
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
 
-  const handleCheckout = async () => {
-    const res = await fetch('/api/checkout', {
-      method: 'POST',
-      body: JSON.stringify({ plan: selectedPlan/* ,email: userEmail */ }),
-    });
+  // const handleCheckout = async () => {
+  //   const res = await fetch('/api/checkout', {
+  //     method: 'POST',
+  //     body: JSON.stringify({ plan: selectedPlan/* ,email: userEmail */ }),
+  //   });
   
-    const data = await res.json();
-    window.location.href = data.url; // Redirect to Stripe Checkout
-  };
+  //   const data = await res.json();
+  //   window.location.href = data.url; // Redirect to Stripe Checkout
+  // };
   
 
 
@@ -189,7 +189,7 @@ export default function Pricing() {
         <button
           onClick={() => {
             setSelectedPlan(null);
-            handleCheckout();
+           // handleCheckout();
           }}
           className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded-lg transition"
         >

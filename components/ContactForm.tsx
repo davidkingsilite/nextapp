@@ -36,7 +36,7 @@ if (!emailRegex.test(form.email)) {
       setStatus('Message sent ✅');
       setForm({ name: '', email: '', message: '' });
     } else {
-      setStatus('Failed to send ❌' || data.error);
+      setStatus( data.error  || 'Failed to send ❌');
     }
   }
 

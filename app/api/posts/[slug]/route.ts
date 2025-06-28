@@ -7,9 +7,12 @@ import { Blog } from '@/models/Blog';
 
 
 
-export async function GET(request: Request, context: { params: { slug: string } }) {
+export async function GET(
+  request: Request,
+  { params }: { params: Promise<{ slug: string }> }
+) {
 
-  const { slug } = await context.params; // ✅ await context first
+  const { slug } = await params; 
 
   await connectDB();
   const post = await Blog.findOne({ slug });
