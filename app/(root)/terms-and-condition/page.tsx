@@ -24,7 +24,7 @@ export default function TermsPage() {
   
         <h2 className="text-xl font-semibold mt-6 mb-2">4. Liability</h2>
         <p className="text-sm text-gray-700">
-          Pro Cleaning is not responsible for pre-existing damage or unsecured valuables. Please secure pets and inform us of fragile items.
+        Shaninomi Cleaning is not responsible for pre-existing damage or unsecured valuables. Please secure pets and inform us of fragile items.
         </p>
   
         <h2 className="text-xl font-semibold mt-6 mb-2">5. Changes to Terms</h2>

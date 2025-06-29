@@ -48,7 +48,7 @@ const BlogPage = () => {
       <section className="max-w-7xl mx-auto text-center mb-14">
         <h1 className="text-4xl font-bold mb-3">Our Cleaning Blog</h1>
         <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto">
-          Helpful tips, insights, and news from Pro Cleaning — your go-to source for professional and home cleaning advice.
+          Helpful tips, insights, and news from Shaninomi Cleaning — your go-to source for professional and home cleaning advice.
         </p>
       </section>
 

@@ -1,7 +1,7 @@
 // components/ContactSection.tsx
 
 
-import { Mail, MapPin, PhoneCall } from 'lucide-react';
+import { Hourglass, Mail, MapPin, PhoneCall } from 'lucide-react';
 import ContactForm from './ContactForm';
 
 
@@ -24,17 +24,7 @@ export default function ContactSection() {
           <h2 className="text-3xl font-bold mb-6">Find us</h2>
   
           <div className="space-y-6 ">
-            {/* Phone */}
-            <div className="flex items-center bg-[#FBFBFB] p-4 rounded-xl shadow border">
-              <div className="bg-green-500 text-white rounded-full p-3 mr-4">
-              <PhoneCall size={20}/>
-              </div>
-              <div>
-                <p className="font-semibold">Call Us</p>
-                <p className="text-gray-600">+(08) 255 201 888</p>
-              </div>
-            </div>
-  
+
             {/* Email */}
             <div className="flex items-center bg-[#FBFBFB] p-4 rounded-xl shadow border">
               <div className="bg-green-500 text-white rounded-full p-3 mr-4">
@@ -45,6 +35,28 @@ export default function ContactSection() {
                 <p className="text-gray-600">Hello@procleaning.com</p>
               </div>
             </div>
+
+            {/* Phone */}
+            <div className="flex items-center bg-[#FBFBFB] p-4 rounded-xl shadow border">
+              <div className="bg-green-500 text-white rounded-full p-3 mr-4">
+              <PhoneCall size={20}/>
+              </div>
+              <div>
+                <p className="font-semibold">Call Us</p>
+                <p className="text-gray-600">+(08) 255 201 888</p>
+              </div>
+            </div>
+            {/* hours */}
+            <div className="flex items-center bg-[#FBFBFB] p-4 rounded-xl shadow border">
+              <div className="bg-green-500 text-white rounded-full p-3 mr-4">
+              <Hourglass size={20}/>
+              </div>
+              <div>
+                <p className="font-semibold">Hours</p>
+                <p className="text-gray-600">Mon–Sat, 9am – 5pm, Sun, 12am - 4pm</p>
+              </div>
+            </div>
+  
   
             {/* Address */}
             <div className="flex items-center bg-[#FBFBFB] p-4 rounded-xl shadow border">

@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                    
                    <div className="text-left leading-tight">
                     <h1 className="font-extrabold text-[18px]">
-                     <span className="text-primary-green-100">PRO</span>
+                     <span className="text-primary-green-100">Shaninomi</span>
                      <span className="text-white">Cleaning</span>
                     </h1>
                     <p className="text-[10px] text-white font-light">cleaning services company</p>

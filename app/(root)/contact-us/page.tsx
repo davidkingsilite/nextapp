@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Hourglass } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 
 const ContactPage = () => {
@@ -27,6 +27,15 @@ const ContactPage = () => {
 
         {/* Contact Info */}
         <div className="flex flex-col gap-6">
+          
+          <div className="flex items-start gap-4">
+            <Mail className="text-primary-green-100 w-5 h-5 mt-1" />
+            <div>
+              <h4 className="font-semibold">Email</h4>
+              <p className="text-sm text-gray-600">support@procleaning.com</p>
+            </div>
+          </div>
+
           <div className="flex items-start gap-4">
             <Phone className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
@@ -36,10 +45,10 @@ const ContactPage = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <Mail className="text-primary-green-100 w-5 h-5 mt-1" />
+            <Hourglass className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
-              <h4 className="font-semibold">Email</h4>
-              <p className="text-sm text-gray-600">support@procleaning.com</p>
+              <h4 className="font-semibold">Hours</h4>
+              <p className="text-sm text-gray-600">Mon–Sat, 9am – 5pm, Sun, 12am - 4pm</p>
             </div>
           </div>
 

@@ -15,11 +15,11 @@ const features = [
   'Eco-friendly approach',
 ];
 
-export default function AboutSection() {
+export default function AboutCompany() {
   const router = useRouter();
 
   return (
-    <section className="py-14 bg-white font-bevietnam">
+    <section className=" py-10 sm:py-14 bg-white font-bevietnam">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-4 sm:px-6 lg:px-8 items-center">
 
         {/* Animated Images */}
@@ -30,7 +30,7 @@ export default function AboutSection() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           viewport={{ once: true }}
         >
-          <div className="rounded-2xl overflow-hidden w-[320px] h-[360px]">
+          <div className="rounded-2xl overflow-hidden w-full md:w-[320px] h-full md:h-[360px]">
             <Image
               src="/team-cleaners.png"
               alt="Cleaning Team"
@@ -51,7 +51,7 @@ export default function AboutSection() {
               alt="Cleaning Surface"
               width={300}
               height={300}
-              className="object-cover w-full h-full"
+              className="object-cover w-full"
             />
           </motion.div>
         </motion.div>
@@ -65,7 +65,7 @@ export default function AboutSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
             Welcome To Our <br />
-            Pro-cleaning Company!
+            Shaninomi Cleaning Company!
           </h2>
           <p className="text-gray-600 mb-8 max-w-lg">
             We make your space shine! Professional and reliable cleaning service company providing top-notch solutions for homes and businesses. Satisfaction guaranteed!

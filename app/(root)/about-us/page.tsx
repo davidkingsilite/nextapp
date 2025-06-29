@@ -9,7 +9,7 @@ const AboutPage = () => {
       
       {/* Header */}
       <section className="max-w-7xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">About ProCleaning</h1>
+        <h1 className="text-4xl font-bold mb-4">About Shaninomi Cleaning</h1>
         <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto">
           We’re dedicated to delivering a cleaner, healthier environment for your home and workplace. Discover who we are, what we value, and why clients trust us.
         </p>
@@ -29,7 +29,7 @@ const AboutPage = () => {
         <div className="w-full lg:w-1/2 space-y-5">
           <h2 className="text-2xl font-semibold">Who We Are</h2>
           <p className="text-sm text-gray-700">
-            ProCleaning is a professional cleaning service company based on the values of excellence, integrity, and care. We’ve been offering residential and commercial cleaning solutions that focus on quality and customer satisfaction.
+          Shaninomi Cleaning is a professional cleaning service company based on the values of excellence, integrity, and care. We’ve been offering residential and commercial cleaning solutions that focus on quality and customer satisfaction.
           </p>
           <p className="text-sm text-gray-700">
             Whether it’s regular maintenance, deep cleaning, or specialized services, we tailor our offerings to your unique needs with flexible scheduling and eco-friendly products.

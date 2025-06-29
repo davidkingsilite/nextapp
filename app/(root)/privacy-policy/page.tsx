@@ -4,7 +4,7 @@ export default function PrivacyPolicyPage() {
         <h1 className="text-3xl font-bold mb-6 text-primary-green-100">Privacy Policy</h1>
   
         <p className="text-gray-700 mb-4">
-          This Privacy Policy explains how Pro Cleaning collects, uses, and safeguards your personal information.
+          This Privacy Policy explains how Shaninomi Cleaning collects, uses, and safeguards your personal information.
         </p>
   
         <h2 className="text-xl font-semibold mt-6 mb-2">1. Information We Collect</h2>

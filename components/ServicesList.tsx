@@ -83,7 +83,7 @@ const ServicesList = () => {
       {/* Custom Arrows */}
       <div className="relative">
       <button
-          className={`custom-prev absolute top-1/3 -left-6 -translate-y-1/2 z-10 p-2 rounded-full shadow ${
+          className={`custom-prev absolute top-1/3 -left-4 sm:-left-6 -translate-y-1/2 z-10 p-2 rounded-full shadow ${
             isBeginning ? 'bg-gray-300 cursor-not-allowed' : 'bg-green-500 hover:bg-green-600'
           }`}
           disabled={isBeginning}
@@ -92,7 +92,7 @@ const ServicesList = () => {
         </button>
 
         <button
-          className={`custom-next absolute top-1/3 -right-6 -translate-y-1/2 z-10 p-2 rounded-full shadow ${
+          className={`custom-next absolute top-1/3 -right-4 sm:-right-6 -translate-y-1/2 z-10 p-2 rounded-full shadow ${
             isEnd ? 'bg-gray-300 cursor-not-allowed' : 'bg-green-500 hover:bg-green-600'
           }`}
           disabled={isEnd}

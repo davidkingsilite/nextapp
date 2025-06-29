@@ -1,4 +1,4 @@
-import Company from "@/components/AboutCompany";
+import AboutCompany from "@/components/AboutCompany";
 import BackToTop from "@/components/BackToTop";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
@@ -17,7 +17,7 @@ export default function Home() {
 
       <main className="relative max-w-fit">
         <Hero />
-       <div className="max-w-fit mx-auto px-8 sm:px-10 md:px-16 lg:px-28 pt-10 md:pt-20 pb-10">
+       <div className="max-w-fit mx-auto px-4 sm:px-10 md:px-16 lg:px-28 pt-10 md:pt-20 pb-10">
          <div className="flex justify-between font-bevietnam gap-10 sm:gap-20">
           <h1 className="text-[25px] font-bold">We Always Provide The Best Services</h1>
           <div className="flex flex-col">
@@ -30,7 +30,7 @@ export default function Home() {
          <BackToTop />
          <Solution />
          <ExpertTeam />
-         <Company />
+         <AboutCompany />
          <Pricing />
          <Testimonial />
          <BlogSection />

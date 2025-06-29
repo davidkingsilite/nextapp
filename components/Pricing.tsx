@@ -132,7 +132,7 @@ export default function Pricing() {
       </div>
 
       {/* Plans */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-10 max-w-6xl mx-auto mt-8 px-4 sm:px-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-10 max-w-6xl mx-auto mt-8 sm:px-6">
         {plans[planType].map((plan) => (
           <div
             key={plan.title}
@@ -157,7 +157,7 @@ export default function Pricing() {
             </ul>
             <button 
               onClick={() => setSelectedPlan(plan.title)}
-              className="mt-auto bg-primary-white border border-gray-300 hover:border-green-500 text-sm text-gray-800 font-medium py-2 px-5 rounded-lg hover:bg-green-50 transition min-w-[230px]">
+              className="mt-auto bg-green-500 border border-gray-300 hover:border-green-500 text-sm text-white font-medium py-2 px-5 rounded-lg hover:bg-green-600 transition min-w-[150px] md:min-w-[230px]">
               Book Now
             </button>
           </div>

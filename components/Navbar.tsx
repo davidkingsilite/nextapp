@@ -26,10 +26,10 @@ export default function Navbar() {
           <Image src="/cleaning_broom.png" alt="Cleaning logo" width={22} height={36} />
           <div className="text-left">
             <h1 className="font-bevietnam font-extrabold text-[18px]">
-              <span className="text-primary-green-100">PRO</span>
+              <span className="text-primary-green-100">Shaninomi</span>
               <span className="text-black-100">Cleaning</span>
             </h1>
-            <h6 className="text-grey font-bevietnam text-[10px]">cleaning services company</h6>
+            <h6 className="text-grey font-bevietnam text-[10px]">cleaning services inc company</h6>
           </div>
         </Link>
 

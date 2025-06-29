@@ -1,16 +1,3 @@
-// import ServicesList from '@/components/ServicesList'
-// import React from 'react'
-
-// const page = () => {
-//   return (
-//     <div>
-//         <ServicesList />
-//     </div>
-//   )
-// }
-
-// export default page
-
 'use client';
 
 import Image from 'next/image';
@@ -64,7 +51,7 @@ const ServicePage = () => {
       <section className="max-w-7xl mx-auto text-center mb-16">
         <h1 className="text-4xl font-bold mb-4">Our Services</h1>
         <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto">
-          Whether it’s a one-time deep clean or recurring service, ProCleaning is committed to sparkling results and customer satisfaction.
+          Whether it’s a one-time deep clean or recurring service, Shaninomi Cleaning is committed to sparkling results and customer satisfaction.
         </p>
       </section>
 
