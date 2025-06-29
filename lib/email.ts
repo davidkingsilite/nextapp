@@ -29,7 +29,7 @@ export const sendEmail = async ({quote}: QuoteTypeProps) => {
       <p><strong>Email:</strong> ${quote.email}</p>
       <p><strong>Phone:</strong> ${quote.phone}</p>
       <p><strong>Service:</strong> ${quote.service}</p>
-      <p><strong>Message:</strong> ${quote.message || 'No message provided'}</p>
+      <p><strong>Message:</strong> ${quote.message || 'No message provided'}</p> 
     `,
   };
 

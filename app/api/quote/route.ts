@@ -24,11 +24,11 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'All required fields must be filled.' }, { status: 400 });
     }
 
-    await connectToDB();
+    await connectToDB(); 
 
     const newQuote = await Quote.create({ name, email, phone, service, message });
 
-    await sendEmail(newQuote);
+    await sendEmail({ quote: newQuote });
 
 
     return NextResponse.json({ message: 'Quote submitted successfully.' });
