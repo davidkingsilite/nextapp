@@ -47,7 +47,7 @@ const ExpertTeam = () => {
         },
     ]
   return (
-    <div className='py-7 md:py-14 font-bevietnam px-4 md:px-8 max-w-7xl mx-auto'>
+    <div className='py-7 md:py-14 font-bevietnam max-w-7xl mx-auto'>
         <div className='flex gap-8 sm:justify-between '>
             <h1 className='text-3xl font-semibold'>Effective Cleaning Requires <br /> an Expert Cleaning Team</h1>
             <div className='font-bevietnam flex flex-col gap-1'>

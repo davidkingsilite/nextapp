@@ -35,6 +35,7 @@ const Footer: React.FC = () => {
           </p>
         </div>
         <div className="mx-0 flex flex-col md:flex-row gap-10 md:gap-16 text-nowrap">
+        <div className="flex md:flex-col lg:flex-row gap-10">
         {/* Company */}
         <div>
           <h3 className="font-semibold mb-4">Company</h3>
@@ -54,7 +55,7 @@ const Footer: React.FC = () => {
             <li><Link href="/terms-and-condition">Terms & conditions</Link></li>
           </ul>
         </div>
-
+        </div>
         {/* Newsletter */}
         <div className="">
           <h3 className="font-semibold pb-4">Newsletter</h3>

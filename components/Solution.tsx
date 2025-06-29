@@ -11,7 +11,7 @@ const Solution = () => {
   const router = useRouter();
 
   return (
-    <section className="py-1 px-4 md:px-8">
+    <section className="py-1">
       <div className="py-14 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Text Animation */}
         <motion.div
@@ -48,11 +48,11 @@ const Solution = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex justify-center md:justify-end"
+          className="flex justify-end"
         > 
 
         {/* Right Image */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-end">
           <Image
             src="/Image-(3).png" // rename the file in your public folder
             alt="Cleaning in action"

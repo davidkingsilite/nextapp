@@ -34,7 +34,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex gap-6 font-bevietnam">
+        <div className="hidden lg:flex gap-6 font-bevietnam">
           {navbarLinks.map((link) => (
             <Link
               key={link.id}
@@ -47,7 +47,7 @@ export default function Navbar() {
         </div>
 
         {/* Hamburger Menu */}
-        <button onClick={() => setIsOpen(true)} className="md:hidden text-gray-700 flex right-6 absolute">
+        <button onClick={() => setIsOpen(true)} className="lg:hidden text-gray-700 flex right-6 absolute">
           <Menu size={24} />
         </button>
 
@@ -55,7 +55,7 @@ export default function Navbar() {
         <CustomButton
           title="Get a quote"
           btnType="button"
-          containerStyles="hidden md:flex text-primary-white rounded-full bg-primary-green-100 hover:bg-green-600 min-w-[130px] font-medium text-xs font-poppins"
+          containerStyles="hidden lg:flex text-primary-white rounded-full bg-primary-green-100 hover:bg-green-600 min-w-[130px] font-medium text-xs font-poppins"
           handleClick={() => router.push('/get-a-quote')}
         />
       </nav>
@@ -93,7 +93,7 @@ export default function Navbar() {
             containerStyles="text-white bg-primary-green-100 rounded-full py-2 mt-4 font-medium text-sm"
             handleClick={() => {
               setIsOpen(false);
-              router.push('/dashboard/login');
+              router.push('/get-a-quote');
             }}
           />
         </div>

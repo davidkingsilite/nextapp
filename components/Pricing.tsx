@@ -132,7 +132,7 @@ export default function Pricing() {
       </div>
 
       {/* Plans */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-10 max-w-6xl mx-auto mt-8 sm:px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10 max-w-6xl mx-auto mt-8 sm:px-6">
         {plans[planType].map((plan) => (
           <div
             key={plan.title}
@@ -148,7 +148,7 @@ export default function Pricing() {
               <span className="text-3xl font-bold text-green-600">{plan.price}</span>
               <span className="text-sm text-gray-500">/{planType}</span>
             </div>
-            <ul className="text-gray-600 text-xl md:text-sm  mb-6 space-y-2 text-left">
+            <ul className="text-gray-600 text-xl md:text-sm mb-6 space-y-2 text-left">
               {plan.features.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
                   <span>•</span> {item}

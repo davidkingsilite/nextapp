@@ -56,7 +56,7 @@ export default function Testimonials() {
 
   return (
     <section className="py-20 px-4 bg-white font-bevietnam">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         {/* Left: Heading */}
         <div>
           <h2 className="text-4xl font-bold text-black mb-4">

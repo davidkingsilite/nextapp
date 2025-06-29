@@ -64,7 +64,7 @@ export default function BlogSection() {
           </div>
         </div>
           <Divider />
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPosts.map((blog, idx) => (
             <Link href={`/blog/${blog.slug}`} key={idx}> 
             <div className={`rounded-3xl overflow-hidden outline outline-1 outline-green-500 lg:hover:outline-2 outline-offset-2`}
