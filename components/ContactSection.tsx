@@ -53,7 +53,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-semibold">Hours</p>
-                <p className="text-gray-600">Mon–Sat, 9am – 5pm, Sun, 12am - 4pm</p>
+                <p className="text-gray-600">Mon–Sat, 9am – 5pm, Sun, 12am - 4pm.</p>
               </div>
             </div>
   
@@ -65,7 +65,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-semibold">Address</p>
-                <p className="text-gray-600">7510, Brand Tower, New York, USA</p>
+                <p className="text-gray-600">7510, Brand Tower, New York, USA.</p>
               </div>
             </div>
           </div>

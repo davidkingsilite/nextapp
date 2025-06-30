@@ -25,7 +25,7 @@ const Hero = () => {
       {/* Hero Content (overlaid on image for large screens) */}
       <div className="absolute inset-0 flex items-center">
         <div className="px-2 sm:px-10 md:px-16 lg:px-28 py-8 w-full max-w-6xl mx-auto">
-          <div className="bg-white/80 backdrop-blur-[1px] p-4 sm:p-10 rounded-lg w-full md:w-2/3 flex flex-col gap-6">
+          <div className="bg-white/80 backdrop-blur-[1px] p-4 sm:p-10 rounded-lg w-full md:w-2/3 lg:w-1/2 flex flex-col gap-6">
             <span className="text-sm sm:text-base text-gray-700 font-medium">
               Quality cleaning at a fair price
             </span>

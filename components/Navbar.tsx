@@ -29,7 +29,7 @@ export default function Navbar() {
               <span className="text-primary-green-100">Shaninomi</span>
               <span className="text-black-100">Cleaning</span>
             </h1>
-            <h6 className="text-grey font-bevietnam text-[10px]">cleaning services inc company</h6>
+            <h6 className="text-grey font-bevietnam text-[10px]">cleaning services company</h6>
           </div>
         </Link>
 
