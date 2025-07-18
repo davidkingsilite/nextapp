@@ -27,11 +27,11 @@ const AboutPage = () => {
           />
         </div>
         <div className="w-full lg:w-1/2 space-y-5">
-          <h2 className="text-2xl font-semibold">Who We Are</h2>
-          <p className="text-sm text-gray-700">
+          <h2 className="text-2xl lg:text-4xl font-semibold">Who We Are</h2>
+          <p className="text-sm lg:text-xl text-gray-700">
           Shaninomi Cleaning is a professional cleaning service company based on the values of excellence, integrity, and care. We’ve been offering residential and commercial cleaning solutions that focus on quality and customer satisfaction.
           </p>
-          <p className="text-sm text-gray-700">
+          <p className="text-sm lg:text-xl text-gray-700">
             Whether it’s regular maintenance, deep cleaning, or specialized services, we tailor our offerings to your unique needs with flexible scheduling and eco-friendly products.
           </p>
         </div>
@@ -40,15 +40,15 @@ const AboutPage = () => {
       {/* Mission & Vision */}
       <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
         <div className="bg-primary-green-100/10 rounded-lg p-6 shadow-md">
-          <h3 className="text-xl font-semibold mb-3 text-primary-green-100">Our Mission</h3>
-          <p className="text-sm text-gray-700">
+          <h3 className="text-xl lg:text-2xl font-semibold mb-3 text-primary-green-100">Our Mission</h3>
+          <p className="text-sm lg:text-xl text-gray-700">
             To provide professional, reliable, and affordable cleaning services that create a safe and comfortable environment for our clients — every single day.
           </p>
         </div>
 
         <div className="bg-primary-green-100/10 rounded-lg p-6 shadow-md">
-          <h3 className="text-xl font-semibold mb-3 text-primary-green-100">Our Vision</h3>
-          <p className="text-sm text-gray-700">
+          <h3 className="text-xl lg:text-2xl font-semibold mb-3 text-primary-green-100">Our Vision</h3>
+          <p className="text-sm lg:text-xl text-gray-700">
             To become the most trusted name in residential and commercial cleaning, known for service excellence and sustainable practices.
           </p>
         </div>

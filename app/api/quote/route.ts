@@ -31,7 +31,7 @@ export async function POST(req: Request) {
     await sendEmail({ quote: newQuote });
 
 
-    return NextResponse.json({ message: 'Quote submitted successfully.' });
+    return NextResponse.json({ message: 'Quote submitted successfully!.' });
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: 'Something went wrong.' }, { status: 500 });

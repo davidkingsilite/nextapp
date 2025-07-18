@@ -1,48 +1,3 @@
-// import mongoose, { Mongoose } from 'mongoose';
-
-// const MONGODB_URI = process.env.DATABASE_URL as string;
-
-// if (!MONGODB_URI) {
-//   throw new Error('Please define the DATABASE_URL environment variable');
-// }
-
-// // Extend global type
-// declare global {
-//   var mongoose: {
-//     conn: Mongoose | null;
-//     promise: Promise<Mongoose> | null;
-//   };
-// }
-
-// // Safe fallback for global object in strict mode
-// if (!global.mongoose) {
-//   global.mongoose = {
-//     conn: null,
-//     promise: null,
-//   };
-// }
-
-
-// // ✅ This explicit type fixes the error
-// const cached: {
-//   conn: Mongoose | null;
-//   promise: Promise<Mongoose> | null;
-// } = global.mongoose;
-
-// async function connectDB(): Promise<Mongoose> {
-//   if (cached.conn) return cached.conn;
-
-//   if (!cached.promise) {
-//     cached.promise = mongoose.connect(MONGODB_URI, {
-//       bufferCommands: false,
-//     });
-//   }
-
-//   cached.conn = await cached.promise;
-//   return cached.conn;
-// }
-
-// export default connectDB;
 
 import mongoose, { Mongoose } from 'mongoose';
 
@@ -57,7 +12,6 @@ if (!MONGODB_URI) {
 // Add a type-safe declaration to the global object
 declare global {
   // Allow global `mongoose` reuse in development to prevent hot-reload issues
-  // eslint-disable-next-line no-var
   var mongoose: {
     conn: Mongoose | null;
     promise: Promise<Mongoose> | null;

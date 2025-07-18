@@ -17,6 +17,8 @@ export default function QuoteForm() {
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [response, setResponse] = useState('');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -40,6 +42,7 @@ export default function QuoteForm() {
     if (!recaptchaToken) {
       return alert('Please verify that you are not a robot.');
     }
+     setStatus('sending');
 
     try {
       setSubmitting(true);
@@ -53,6 +56,7 @@ export default function QuoteForm() {
       const data = await res.json();
 
       if (res.ok) {
+        setStatus('success');
         setResponse('Request submitted successfully!');
         setForm({ name: '', email: '', phone: '', service: '', message: '' });
         setRecaptchaToken(null);
@@ -165,11 +169,12 @@ export default function QuoteForm() {
         type="submit"
         disabled={submitting}
         className="w-full bg-primary-green-100 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition font-semibold"
+        onClick={() => setResponse('')}
       >
         {submitting ? 'Submitting...' : 'Submit Request'}
       </button>
 
-      {response && <p className="text-sm text-center text-gray-600 mt-2">{response}</p>}
+      {response && <p className={`text-sm text-center mt-2 ${status === 'success' ? 'text-green-700': 'text-red-500'}`}>{response}</p>}
     </form>
  {/* Image or Info Panel */}
       <motion.div

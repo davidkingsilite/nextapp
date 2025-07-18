@@ -49,7 +49,7 @@ const Hero = () => {
               <CustomButton
                 title="View all Services"
                 btnType="button"
-                containerStyles="text-black-100 outline outline-1 outline-gray-600 lg:hover:outline-2 outline-offset-2 rounded px-6 py-2 text-sm font-medium"
+                containerStyles="text-black-100 outline outline-1 outline-gray-600 lg:hover:outline-2 rounded px-6 py-2 text-sm font-medium"
                 handleClick={() => router.push('/services')}
               />
             </div>

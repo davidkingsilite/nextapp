@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
       {/* Bottom line */}
       <div className="text-center text-sm text-gray-400">
          <Divider />
-        2025 “Procleaning” All Rights Reserved
+         &copy; {new Date().getFullYear()} ShaninomiCleaning - All Rights Reserved
       </div>
     </footer>
   );
