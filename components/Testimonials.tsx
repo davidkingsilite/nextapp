@@ -6,20 +6,20 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    name: 'Anna Fox',
-    role: 'Business Woman',
+    name: 'Shakari Jackson',
+    role: 'Business Woman', 
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/clientPic1.png', // Replace with actual image URL or static import
+    image: '/testimonial1.png', // Replace with actual image URL or static import
   },
   {
-    name: 'Claire Whitmore',
+    name: 'Kierra Johnson',
     role: 'Business Woman',
     rating: 5,
     message:
       'Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service',
-    image: '/Gemini.png', // Replace with actual image URL or static import
+    image: '/gemini2.png', // Replace with actual image URL or static import
   },
   {
     name: 'Emily Zhang',

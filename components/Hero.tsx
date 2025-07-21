@@ -18,22 +18,29 @@ const Hero = () => {
           alt="hero"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-center"
         />
       </div>
 
       {/* Hero Content (overlaid on image for large screens) */}
       <div className="absolute inset-0 flex items-center">
         <div className="px-2 sm:px-10 md:px-16 lg:px-28 py-8 w-full max-w-6xl mx-auto">
-          <div className="bg-white/80 backdrop-blur-[1px] p-4 sm:p-10 rounded-lg w-full md:w-2/3 lg:w-1/2 flex flex-col gap-6">
+          <div className="bg-white/80 backdrop-blur-[1px] p-4 sm:p-10 rounded-lg w-full md:w-2/3 lg:w-1/2 flex flex-col gap-3 sm:gap-6">
             <span className="text-sm sm:text-base text-gray-700 font-medium">
               Quality cleaning at a fair price
             </span>
-            <h1 className="font-bevietnam font-bold text-2xl sm:text-3xl md:text-4xl leading-snug text-gray-900">
-              Specialized, efficient,<br />
-              and thorough cleaning<br />
-              services
-            </h1>
+            <div className='flex justify-center items-center p-0'>
+            <Image
+              src='/badge.png'
+              alt='chicagos finest'
+              width={180}
+              height={180}
+              className='w-1/2 h-1/2'
+              />
+              <h2 className="font-poppins font-bold text-lg sm:text-xl md:text-2xl leading-snug text-gray-900">
+              Serving Chicagoans 25Years
+            </h2>
+              </div>
             <p className="text-gray-600 text-sm sm:text-base">
               Performing cleaning tasks using the least amount of time, energy, and money.
             </p>

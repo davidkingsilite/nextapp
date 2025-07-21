@@ -32,7 +32,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-semibold">Email Now</p>
-                <p className="text-gray-600">Hello@procleaning.com</p>
+                <p className="text-gray-600">hello@shaninomicleaning.com</p>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-semibold">Call Us</p>
-                <p className="text-gray-600">+(08) 255 201 888</p>
+                <p className="text-gray-600">+1 (312) 388-6210</p>
               </div>
             </div>
             {/* hours */}
@@ -65,7 +65,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-semibold">Address</p>
-                <p className="text-gray-600">7510, Brand Tower, New York, USA.</p>
+                <p className="text-gray-600">123 Sparkle Street, Clean City, IL 60500</p>
               </div>
             </div>
           </div>
@@ -73,8 +73,8 @@ export default function ContactSection() {
           {/* Optional: Google Map Embed */}
           <div className="mt-6">
             <iframe
-              title="Pro Cleaning Location"
-              src="https://maps.google.com/maps?q=New York, USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              title="Shaninomi Cleaning Location"
+              src="https://maps.google.com/maps?q=chicago, USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="200"
               style={{ border: 0 }}

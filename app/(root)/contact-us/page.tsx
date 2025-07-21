@@ -32,7 +32,7 @@ const ContactPage = () => {
             <Mail className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
               <h4 className="font-semibold">Email</h4>
-              <p className="text-sm text-gray-600">support@procleaning.com</p>
+              <p className="text-sm text-gray-600">support@Shaninomicleaning.com</p>
             </div>
           </div>
 
@@ -40,7 +40,7 @@ const ContactPage = () => {
             <Phone className="text-primary-green-100 w-5 h-5 mt-1" />
             <div>
               <h4 className="font-semibold">Phone</h4>
-              <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+              <p className="text-sm text-gray-600">+1 (312) 388-6210</p>
             </div>
           </div>
 
@@ -64,7 +64,7 @@ const ContactPage = () => {
           <div className="mt-6">
             <iframe
               title="Pro Cleaning Location"
-              src="https://maps.google.com/maps?q=New York, USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Chicago, USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="200"
               style={{ border: 0 }}

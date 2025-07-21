@@ -8,7 +8,7 @@ const Trust = () => {
   <div className="max-w-6xl mx-auto px-4 text-center">
     {/* Section Heading */}
     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-      Why People Trust ProCleaning
+      Why People Trust Shaninomi Cleaning
     </h2>
     <p className="text-gray-600 max-w-xl mx-auto mb-10">
       We&apos;re licensed, insured, and committed to top-tier service across Chicago.
@@ -29,10 +29,6 @@ const Trust = () => {
       </div>
 
       {/* Stat 1 */}
-      {/* <div className="flex flex-col items-center">
-        <p className="text-3xl font-bold text-green-600 mb-2">100+</p>
-        <p className="text-sm font-medium text-gray-700">Homes Cleaned</p>
-      </div> */}
       <Counter />
 
       {/* Stat 2 */}

@@ -1,11 +1,9 @@
-
-
 'use client';
 
 import React, { useRef, useState } from 'react';
 import Services from './Services';
 import { Swiper, SwiperSlide  } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -22,7 +20,7 @@ const ServicesList = () => {
     {
       id: 0,
       img: '/Image.png',
-      alt: 'Residentail cleaning',
+      alt: 'Residential cleaning',
       title: 'Residential Cleaning',
       description:
         'While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:',
@@ -81,7 +79,10 @@ const ServicesList = () => {
     <div className="relative max-w-7xl mx-auto">
     
       {/* Custom Arrows */}
-      <div className="relative">
+      <div className="relative"
+      // onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+      // onMouseLeave={() => swiperRef.current?.autoplay?.start()}
+      >
       <button
           className={`custom-prev absolute top-1/3 -left-4 sm:-left-6 -translate-y-1/2 z-10 p-2 rounded-full shadow ${
             isBeginning ? 'bg-gray-300 cursor-not-allowed' : 'bg-green-500 hover:bg-green-600'
@@ -102,13 +103,18 @@ const ServicesList = () => {
 
      
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation , Autoplay]}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
           setIsBeginning(swiper.isBeginning);
           setIsEnd(swiper.isEnd);
         }}
         onSlideChange={handleSwiperChange}
+        loop = {false}
+        autoplay={{ // ✅ properly structured autoplay object
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         navigation={{
           nextEl: '.custom-next',
           prevEl: '.custom-prev',
