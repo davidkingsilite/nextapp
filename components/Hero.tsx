@@ -37,7 +37,7 @@ const Hero = () => {
               height={180}
               className='w-1/2 h-1/2'
               />
-              <h2 className="font-poppins font-bold text-lg sm:text-xl md:text-2xl leading-snug text-gray-900">
+              <h2 className="font-lato font-bold text-lg sm:text-xl md:text-2xl leading-snug text-gray-900">
               Serving Chicagoans 25Years
             </h2>
               </div>
