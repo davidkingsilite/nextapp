@@ -11,7 +11,7 @@ const Trust = () => {
       Why People Trust ProCleaning
     </h2>
     <p className="text-gray-600 max-w-xl mx-auto mb-10">
-      We're licensed, insured, and committed to top-tier service across Chicago.
+      We&apos;re licensed, insured, and committed to top-tier service across Chicago.
     </p>
 
     {/* Badges and Stats Grid */}

@@ -1,4 +1,3 @@
-
 import mongoose, { Mongoose } from 'mongoose';
 
 // const MONGODB_URI = process.env.DATABASE_URL;
@@ -12,7 +11,7 @@ if (!MONGODB_URI) {
 // Add a type-safe declaration to the global object
 declare global {
   // Allow global `mongoose` reuse in development to prevent hot-reload issues
-  var mongoose: {
+  let mongoose: {
     conn: Mongoose | null;
     promise: Promise<Mongoose> | null;
   };
