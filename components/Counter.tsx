@@ -106,7 +106,7 @@ export default function HomesCleanedStat() {
           setHasAnimated(false); // ensure it runs only once
         }
       },
-      { threshold: 1.5 } // adjust as needed
+      { threshold: 1 } // adjust as needed
     );
 
     if (ref.current) {
