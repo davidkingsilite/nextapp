@@ -5,7 +5,7 @@ import React from 'react';
 
 const AboutPage = () => {
   return (
-    <main className="px-4 py-12 md:px-8 lg:px-20 font-bevietnam bg-white text-black-100">
+    <main className="px-4 py-12 md:px-8 lg:px-20 font-bevietnam bg-[#F9FAFB] text-black-100">
       
       {/* Header */}
       <section className="max-w-7xl mx-auto text-center mb-12">

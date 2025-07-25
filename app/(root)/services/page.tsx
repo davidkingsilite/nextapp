@@ -45,7 +45,7 @@ const services = [
 
 const ServicePage = () => {
   return (
-    <main className="px-4 py-12 md:px-8 lg:px-20 font-bevietnam bg-white text-black-100">
+    <main className="px-4 py-12 md:px-8 lg:px-20 font-bevietnam bg-[#F9FAFB] text-black-100">
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto text-center mb-16">

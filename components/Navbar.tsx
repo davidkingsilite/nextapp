@@ -19,7 +19,7 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <header className="w-full z-50 sticky top-0 shadow-sm bg-[#F9FAFB]">
+    <header className="w-full z-50 sticky top-0 bg-white shadow-sm">
       <nav className="max-w-7xl mx-auto flex md:justify-between sm:justify-between items-center py-6 px-4 sm:px-6 lg:px-8 h-20 relative">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-1">

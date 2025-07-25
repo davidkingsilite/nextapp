@@ -73,7 +73,7 @@ export default function QuoteForm() {
 
   return (
 
-    <main className="min-h-screen bg-white text-black-100 font-bevietnam px-4 py-12 md:px-10 lg:px-24">
+    <main className="min-h-screen bg-[#F9FAFB] text-black-100 font-bevietnam px-4 py-12 md:px-10 lg:px-24">
        {/* Header Section */}
          <motion.div
         initial={{ opacity: 0, y: 20 }}

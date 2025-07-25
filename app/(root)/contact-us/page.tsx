@@ -6,7 +6,7 @@ import ContactForm from '@/components/ContactForm';
 const ContactPage = () => {
 
   return (
-    <main className="px-4 py-16 md:px-8 lg:px-20 font-bevietnam bg-white text-black-100">
+    <main className="px-4 py-16 md:px-8 lg:px-20 font-bevietnam bg-[#F9FAFB] text-black-100">
       
       {/* Hero */}
       <section className="text-center max-w-2xl mx-auto mb-16">

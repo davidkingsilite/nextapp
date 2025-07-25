@@ -1,6 +1,6 @@
 export default function SupportPage() {
     return (
-      <main className="max-w-4xl mx-auto px-4 py-12 font-bevietnam">
+      <main className="max-w-4xl mx-auto px-4 py-12 font-bevietnam bg-[#F9FAFB]">
         <h1 className="text-3xl font-bold mb-6 text-primary-green-100">Customer Support</h1>
         <p className="mb-4 text-gray-700">
           Need help with our services? We’re here for you. Reach out to our support team, and we’ll get back to you as soon as possible.

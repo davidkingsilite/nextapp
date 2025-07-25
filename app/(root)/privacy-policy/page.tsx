@@ -1,6 +1,6 @@
 export default function PrivacyPolicyPage() {
     return (
-      <main className="max-w-4xl mx-auto px-4 py-12 font-bevietnam">
+      <main className="max-w-4xl mx-auto px-4 py-12 font-bevietnam bg-[#F9FAFB]">
         <h1 className="text-3xl font-bold mb-6 text-primary-green-100">Privacy Policy</h1>
   
         <p className="text-gray-700 mb-4">

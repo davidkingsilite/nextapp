@@ -38,7 +38,7 @@ export default async function BlogPost({
   if (!post) return notFound();
 
   return (
-    <main className="px-4 py-12 md:px-8 lg:px-20 font-bevietnam bg-white text-black-100 max-w-4xl mx-auto">
+    <main className="px-4 py-12 md:px-8 lg:px-20 font-bevietnam bg-[#F9FAFB] text-black-100 max-w-4xl mx-auto">
       <Link href="/blog" className="text-sm text-primary-green-100 hover:underline">
         ← Back to Blog
       </Link>
