@@ -19,7 +19,7 @@ export default function AboutCompany() {
   const router = useRouter();
 
   return (
-    <section className=" py-10 sm:py-14 bg-white font-bevietnam">
+    <section className=" py-10 sm:py-14 bg-[#F9FAFB] font-bevietnam">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 sm:px-6 lg:px-0 items-center">
 
         {/* Animated Images */}

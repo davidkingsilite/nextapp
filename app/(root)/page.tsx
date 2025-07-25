@@ -16,7 +16,7 @@ export default function Home() {
   
   return (
 
-      <main className="relative max-w-fit">
+      <main className="relative max-w-fit bg-[#F9FAFB]">
         <Hero />
        <div className="max-w-fit mx-auto px-4 sm:px-10 md:px-16 lg:px-28 pt-10 md:pt-20 pb-10">
          <div className="flex flex-col font-bevietnam gap-10">

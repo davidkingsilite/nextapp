@@ -10,7 +10,7 @@ const Solution = () => {
   const router = useRouter();
 
   return (
-    <section className="py-14 bg-white">
+    <section className="py-14 bg-[#F9FAFB]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Text Section */}
         <motion.div

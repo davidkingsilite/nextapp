@@ -55,7 +55,7 @@ export default function Testimonials() {
   const { name, role, rating, message, image } = testimonials[current];
 
   return (
-    <section className="py-20 px-4 bg-white font-bevietnam">
+    <section className="py-20 px-4 bg-[#F9FAFB] font-bevietnam">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
         {/* Left: Heading */}
         <div>

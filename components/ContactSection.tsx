@@ -5,7 +5,7 @@ import ContactForm from './ContactForm';
 export default function ContactSection() {
 
     return (
-      <section className="bg-white text-black py-10 font-bevietnam">
+      <section className="bg-[#F9FAFB] text-black py-10 font-bevietnam">
        <div className='flex flex-col md:flex-row-reverse md:justify-between gap-6'>
 
         {/* Right side - Contact Form */}
