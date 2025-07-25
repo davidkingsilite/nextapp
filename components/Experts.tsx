@@ -28,8 +28,8 @@ const Experts = ({item}: ExpertCardProps) => {
           width={250}
           height={200}
           placeholder='blur'
-          blurDataURL='blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjZjBmMGYwIi8+"
-           '
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjZjBmMGYwIi8+"
+           
           className='w-full -h-3/4 object-cover'
          />
        </div>
@@ -47,6 +47,7 @@ const Experts = ({item}: ExpertCardProps) => {
          <div className='flex gap-2 items-center'>
          <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
          <Image
+          title="Follow on Facebook"
            src={item.img3}
            alt='facebook'
            width={15}
@@ -56,6 +57,7 @@ const Experts = ({item}: ExpertCardProps) => {
            </Link>
           <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
           <Image
+           title="Follow on X"
            src={item.img4}
            alt='X'
            width={15}
@@ -65,8 +67,9 @@ const Experts = ({item}: ExpertCardProps) => {
           </Link>      
           <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <Image
+           title="Follow on Instagram"
            src={item.img5}
-           alt='instargam'
+           alt='instagram'
            width={15}
            height={15}
            className='hover:bg-primary-green-100 p-1 rounded-full transition h-8 w-8'
@@ -74,6 +77,7 @@ const Experts = ({item}: ExpertCardProps) => {
            </Link>
            <Link href="https://www.discord.com" target="_blank" rel="noopener noreferrer">
           <Image
+           title="Follow on Discord"
            src={item.img6}
            alt='discord'
            width={15}

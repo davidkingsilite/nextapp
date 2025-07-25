@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section className="relative w-full bg-white">
       {/* Hero Image */}
-      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[590px]">
+      {/* <div className="relative w-full h-[400px] sm:h-[500px] md:h-[590px]">
         <Image
           src="/hero_lamge.png"
           alt="hero"
@@ -21,7 +21,19 @@ const Hero = () => {
           priority
           className="object-cover object-center"
         />
-      </div>
+      </div> */}
+      <div className="relative w-full h-[400px] sm:h-[500px] md:h-[550px]">
+        <Image
+        src="/hero_lamge.png"
+        alt="Hero Image"
+        fill
+        priority
+        sizes="(max-width: 768px) 100vw,
+           (max-width: 1200px) 70vw,
+           100vw"
+        className="object-cover"
+       />
+</div>
 
 
       {/* Hero Content (overlaid on image for large screens) */}

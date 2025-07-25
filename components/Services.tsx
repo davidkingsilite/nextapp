@@ -21,18 +21,28 @@ const Services =({item}: ServicesProps) => {
   const router = useRouter();
 
   return (
-    <div className='flex flex-col flex-1 gap-5 max-w-sm w-full h-full'>
-       <Image
+    <div className='flex flex-col flex-1 gap-4 max-w-sm w-full h-full'>
+       {/* <Image
        src={item.img}
        alt='Service Image'
        width={350}
        height={250}
        priority
        className='object-contain w-full'
+        /> */}
+        <div className="relative w-full h-56 sm:h-64 md:h-72">
+        <Image
+          src={item.img}
+          alt={item.alt}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          priority
+          className="object-cover rounded-2xl"
         />
+      </div>
       <div className='flex flex-col font-bevietnam '>
         <h3 className='font-semibold text-black-100 text-lg'>{item.title}</h3>
-        <p className='text-grey-100 text-xs flex text-left text-wrap justify-center'>{item.description}</p>
+        <p className='text-grey-100 text-sm flex text-left text-wrap justify-center'>{item.description}</p>
         <div className='flex mt-5 items-start'>
         <CustomButton
           title='Book Now'

@@ -33,7 +33,7 @@ export default function ContactSection() {
                 <p className="font-semibold">Email Now</p>
                 {/* <p className="text-gray-600">hello@shaninomicleaning.com</p> */}
                 <p className="text-gray-600">
-                  <a href="mailto:hello@shaninomicleaning.com" className="hover:underline">hello@shaninomicleaning.com</a>
+                  <a href="mailto:hello@shaninomicleaning.com" className="hover:underline">hello@shaninomi.com</a>
                  </p>
               </div>
             </div>
