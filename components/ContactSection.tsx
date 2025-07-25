@@ -1,6 +1,3 @@
-// components/ContactSection.tsx
-
-
 import { Hourglass, Mail, MapPin, PhoneCall } from 'lucide-react';
 import ContactForm from './ContactForm';
 
@@ -8,7 +5,9 @@ import ContactForm from './ContactForm';
 export default function ContactSection() {
 
     return (
-      <section className="bg-white text-black py-14 md:flex md:justify-between gap-10 font-bevietnam">
+      <section className="bg-white text-black py-10 font-bevietnam">
+       <div className='flex flex-col md:flex-row-reverse md:justify-between gap-6'>
+
         {/* Right side - Contact Form */}
         <div className="flex-1 mb-10">
           <h2 className="text-3xl font-bold mb-4">Keep In Touch</h2>
@@ -19,7 +18,7 @@ export default function ContactSection() {
         </div>
 
         {/* Left side - Contact Info */}
-        <div className="flex-1 mb-1 md:mb-0 flex flex-col justify-end ">
+        <div className="flex-1 mb-1 md:mb-0 flex flex-col ">
 
           <h2 className="text-3xl font-bold mb-6">Find us</h2>
   
@@ -32,7 +31,10 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-semibold">Email Now</p>
-                <p className="text-gray-600">hello@shaninomicleaning.com</p>
+                {/* <p className="text-gray-600">hello@shaninomicleaning.com</p> */}
+                <p className="text-gray-600">
+                  <a href="mailto:hello@shaninomicleaning.com" className="hover:underline">hello@shaninomicleaning.com</a>
+                 </p>
               </div>
             </div>
 
@@ -43,7 +45,10 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="font-semibold">Call Us</p>
-                <p className="text-gray-600">+1 (312) 388-6210</p>
+                {/* <p className="text-gray-600">+1 (312) 388-6210</p> */}
+                <p className="text-gray-600">
+                  <a href="tel:+13123886210" className="hover:underline">+1 (312) 388-6210</a>
+                </p>
               </div>
             </div>
             {/* hours */}
@@ -70,6 +75,8 @@ export default function ContactSection() {
             </div>
           </div>
 
+       </div>
+            </div>
           {/* Optional: Google Map Embed */}
           <div className="mt-6">
             <iframe
@@ -82,7 +89,6 @@ export default function ContactSection() {
               className="rounded-md"
             ></iframe>
           </div>
-        </div>
       </section>
     );
   }

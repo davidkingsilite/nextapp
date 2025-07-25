@@ -6,6 +6,7 @@ import React from 'react';
 import CustomButton from './CustomBotton';
 import { useRouter } from 'next/navigation';
 
+
 const Hero = () => {
   const router = useRouter();
 
@@ -22,23 +23,25 @@ const Hero = () => {
         />
       </div>
 
+
       {/* Hero Content (overlaid on image for large screens) */}
       <div className="absolute inset-0 flex items-center">
         <div className="px-2 sm:px-10 md:px-16 lg:px-28 py-8 w-full max-w-6xl mx-auto">
           <div className="bg-white/80 backdrop-blur-[1px] p-4 sm:p-10 rounded-lg w-full md:w-2/3 lg:w-1/2 flex flex-col gap-3 sm:gap-6">
-            <span className="text-sm sm:text-base text-gray-700 font-medium">
-              Quality cleaning at a fair price
-            </span>
-            <div className='flex justify-center items-center p-0'>
+
+          <h1 className="text-sm sm:text-base text-gray-700 font-medium" aria-label="Quality cleaning at a fair price">
+             Quality cleaning at a fair price
+          </h1>
+            <div className='flex justify-start items-center p-0'>
             <Image
               src='/badge.png'
               alt='chicagos finest'
-              width={180}
-              height={180}
-              className='w-1/2 h-1/2'
+              width={150}
+              height={150}
+              className='object-contain'
               />
               <h2 className="font-lato font-bold text-lg sm:text-xl md:text-2xl leading-snug text-gray-900">
-              Serving Chicagoans 25Years
+              Serving Chicagoans <br/>25Years
             </h2>
               </div>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -63,6 +66,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+  
     </section>
   );
 };

@@ -41,7 +41,7 @@ if (!emailRegex.test(form.email)) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 bg-gray-50 p-6 rounded-xl shadow-sm flex flex-col">
+    <form onSubmit={handleSubmit} className="space-y-4 bg-gray-50 p-2 rounded-xl shadow-sm flex flex-col">
       <input
         type="text"
         name="name"
