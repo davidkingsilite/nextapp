@@ -18,7 +18,7 @@ export default function Home() {
 
       <main className="relative max-w-fit bg-[#F9FAFB]">
         <Hero />
-       <div className="max-w-fit mx-auto px-4 sm:px-10 md:px-16 lg:px-28 pt-10 md:pt-20 pb-10">
+       <div className="max-w-fit mx-auto px-4 pb-10 pt-10 sm:px-10 md:px-16 lg:px-28 md:pt-16">
          <div className="flex flex-col font-bevietnam gap-10">
           <Trust />
           <div className="flex justify-between items-center font-bevietnam gap-4 px-4 sm:gap-20">

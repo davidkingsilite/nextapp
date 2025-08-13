@@ -4,7 +4,7 @@ import Counter from './Counter';
 
 const Trust = () => {
   return (
-    <section className="py-8 bg-gray-50">
+    <section className="py-4 bg-gray-50">
   <div className="max-w-6xl mx-auto px-4 text-center">
     {/* Section Heading */}
     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
